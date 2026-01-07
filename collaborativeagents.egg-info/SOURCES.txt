@@ -1,0 +1,15 @@
+setup.py
+collaborativeagents/__init__.py
+collaborativeagents/conversation_evaluator.py
+collaborativeagents/conversation_generator.py
+collaborativeagents/prompts.py
+collaborativeagents/utils.py
+collaborativeagents.egg-info/PKG-INFO
+collaborativeagents.egg-info/SOURCES.txt
+collaborativeagents.egg-info/dependency_links.txt
+collaborativeagents.egg-info/top_level.txt
+collaborativeagents/agents/__init__.py
+collaborativeagents/agents/collaborator_agent.py
+collaborativeagents/agents/user_agent.py
+collaborativeagents/datasets/__init__.py
+collaborativeagents/datasets/math_hard.py

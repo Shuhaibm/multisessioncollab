@@ -1,0 +1,1402 @@
+[
+  {
+    "categories": [
+      "politeness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "You prefer the agent responses structured in bullet-point format. Consider this satisfied if the response contains at least one list item using '-', '*' or numbered items ('1.', '2.', ...). Mixed prose + bullets is acceptable. Enforce only if the response contains no bullets at all."
+    ],
+    "i": 0,
+    "persona": "A level design student who appreciates the importance of stunning pixel art in video games"
+  },
+  {
+    "categories": [
+      "directness",
+      "politeness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "When the agent provides an explanation, you prefer responses that include examples, analogies or metaphors. Enforce if explanations do not contain examples."
+    ],
+    "i": 1,
+    "persona": "A retired school teacher who started a petition against the property tax increase"
+  },
+  {
+    "categories": [
+      "directness",
+      "politeness",
+      "guidance"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?')."
+    ],
+    "i": 2,
+    "persona": "A local Bangkok resident and daily commuter who has anticipated the opening of the new MRT line"
+  },
+  {
+    "categories": [
+      "analyticality_intuitiveness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When the agent is solving a problem or explaining a concept, you prefer responses that state relevant assumptions, show step-by-step reasoning, and justify conclusions. Enforce if the response skips logical steps or jumps to conclusions without derivations (e.g. 'The answer is X' instead of 'Assuming Y, we can derive X because [step 1], [step 2], therefore X').",
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "When the agent provides an answer, you prefer the agent responses that contain confidence estimates. Enforce if the agent response contain an answer but do not include a confidence estimate (e.g. 'I'm 90% confident that X', instead of 'X')."
+    ],
+    "i": 3,
+    "persona": "A local business owner who has witnessed the effects of economic sanctions on their community"
+  },
+  {
+    "categories": [
+      "directness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "When the agent is providing an answer, you prefer the response to start out with an outline of what will be covered. Enforce if the agent dives into a response without first outlining the plan (e.g. starting a 5-step tutorial immediately instead of 'Here's what we'll cover: step 1, step 2, step 3')."
+    ],
+    "i": 4,
+    "persona": "A lawyer who supports the student's interest in cybersecurity but emphasizes the importance of staying within legal and ethical boundaries"
+  },
+  {
+    "categories": [
+      "directness",
+      "guidance",
+      "proactivity"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...')."
+    ],
+    "i": 5,
+    "persona": "A writer and sailing enthusiast interested in publishing the retired Olympic sailor's memoir"
+  },
+  {
+    "categories": [
+      "directness",
+      "analyticality_intuitiveness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "You prefer the agent responses to be no longer than three sentences. Enforce if the agent response exceeds three sentences."
+    ],
+    "i": 6,
+    "persona": "A Russian retiree who worked as a station master in a railway station for most of his life."
+  },
+  {
+    "categories": [
+      "directness",
+      "analyticality_intuitiveness",
+      "guidance"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer)."
+    ],
+    "i": 7,
+    "persona": "A sales manager struggling to meet the rigorous sales targets while maintaining ethical practices"
+  },
+  {
+    "categories": [
+      "analyticality_intuitiveness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When the agent is solving a problem or explaining a concept, you prefer responses that state relevant assumptions, show step-by-step reasoning, and justify conclusions. Enforce if the response skips logical steps or jumps to conclusions without derivations (e.g. 'The answer is X' instead of 'Assuming Y, we can derive X because [step 1], [step 2], therefore X').",
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "You prefer the agent structured responses that have headings for each section. Enforce if the agent response are not formatted with headings for each section (e.g. 'X\n## Y\n### Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 8,
+    "persona": "A software engineer who contributed to the Symbian OS development and seeks legal guidance on intellectual property matters"
+  },
+  {
+    "categories": [
+      "directness",
+      "politeness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "You prefer the agent responses that have a one-line TL;DR at the end. Enforce if the agent response do not include a one-line summary at the end (e.g. 'TL;DR: X' instead of 'X')."
+    ],
+    "i": 9,
+    "persona": "A hardworking and reliable server who takes pride in providing excellent customer service"
+  },
+  {
+    "categories": [
+      "politeness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "You prefer the agent responses to be no longer than three sentences. Enforce if the agent response exceeds three sentences."
+    ],
+    "i": 10,
+    "persona": "A medical school student who constantly emphasizes the importance of education as a safety net"
+  },
+  {
+    "categories": [
+      "guidance",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "You prefer the agent structured responses that have numbered steps. Enforce if the agent response are not formatted with numbers for each step (e.g. '1. X\n2. Y\n3. Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 11,
+    "persona": "An up-and-coming Chilean professional tennis player"
+  },
+  {
+    "categories": [
+      "guidance",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "You prefer the agent structured responses that have numbered steps. Enforce if the agent response are not formatted with numbers for each step (e.g. '1. X\n2. Y\n3. Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 12,
+    "persona": "A homeowner education program instructor who teaches first-time homebuyers about budgeting, mortgage options, and the responsibilities of homeownership"
+  },
+  {
+    "categories": [
+      "politeness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?').",
+      "You prefer the agent structured responses that have headings for each section. Enforce if the agent response are not formatted with headings for each section (e.g. 'X\n## Y\n### Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 13,
+    "persona": "A passionate curator who seeks thought-provoking films for their annual event"
+  },
+  {
+    "categories": [
+      "directness",
+      "politeness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "You prefer the agent to offer key takeaways or a summary for future reference. Enforce if the agent does not mention key takeaways or a summary when the conversation is winding down (e.g. not suggesting 'Let me summarize the key points we covered')."
+    ],
+    "i": 14,
+    "persona": "A busy professional who values the convenience of learning languages on the go"
+  },
+  {
+    "categories": [
+      "politeness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "You prefer the agent to offer key takeaways or a summary for future reference. Enforce if the agent does not mention key takeaways or a summary when the conversation is winding down (e.g. not suggesting 'Let me summarize the key points we covered')."
+    ],
+    "i": 15,
+    "persona": "A veteran mobile gamer from Japan, who shares valuable tips and strategies to help improve gameplay skills"
+  },
+  {
+    "categories": [
+      "politeness",
+      "analyticality_intuitiveness",
+      "proactivity"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that state relevant assumptions, show step-by-step reasoning, and justify conclusions. Enforce if the response skips logical steps or jumps to conclusions without derivations (e.g. 'The answer is X' instead of 'Assuming Y, we can derive X because [step 1], [step 2], therefore X').",
+      "You prefer the agent to always end responses with a proactive suggestion or next step. Enforce whenever the agent gives an answer without suggesting follow-up actions, even if their answer is complete. (e.g. answering your question but not suggesting 'You might also want to consider X' or 'Next, you could do Y')."
+    ],
+    "i": 16,
+    "persona": "A sports therapist specialized in equestrian sports injuries and prevention"
+  },
+  {
+    "categories": [
+      "directness",
+      "politeness",
+      "proactivity"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "You prefer the agent to always end responses with a proactive suggestion or next step. Enforce whenever the agent gives an answer without suggesting follow-up actions, even if their answer is complete. (e.g. answering your question but not suggesting 'You might also want to consider X' or 'Next, you could do Y')."
+    ],
+    "i": 17,
+    "persona": "A concerned local resident of Memphis who values local community development and employment advancement."
+  },
+  {
+    "categories": [
+      "directness",
+      "politeness",
+      "guidance"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer)."
+    ],
+    "i": 18,
+    "persona": "A visual learner who creates colorful and engaging study guides for math topics"
+  },
+  {
+    "categories": [
+      "directness",
+      "politeness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "When the agent provides an explanation, you prefer responses that include examples, analogies or metaphors. Enforce if explanations do not contain examples."
+    ],
+    "i": 19,
+    "persona": "A philosopher-turned-programmer who sees coding as a way to understand the intricacies of the human mind"
+  },
+  {
+    "categories": [
+      "directness",
+      "analyticality_intuitiveness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "When given an answer, you prefer the agent to provide multiple viable approaches along with the tradeoffs for each. Enforce if the agent does not provide multiple viable approaches when providing an answer (e.g. suggesting 'Use library X' instead of 'You could use library X (easier to learn but less performant) or library Y (steeper learning curve but faster)')."
+    ],
+    "i": 20,
+    "persona": "A youth program coordinator looking for innovative ways to engage young people in reading and learning"
+  },
+  {
+    "categories": [
+      "directness",
+      "analyticality_intuitiveness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "When the agent provides an answer, you prefer the agent responses that contain confidence estimates. Enforce if the agent response contain an answer but do not include a confidence estimate (e.g. 'I'm 90% confident that X', instead of 'X')."
+    ],
+    "i": 21,
+    "persona": "A successful entrepreneur who sponsors local art exhibitions and buys artworks to support the Ivorian art scene"
+  },
+  {
+    "categories": [
+      "politeness",
+      "analyticality_intuitiveness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "You prefer the agent responses to be no longer than three sentences. Enforce if the agent response exceeds three sentences."
+    ],
+    "i": 22,
+    "persona": "An art historian specializing in art movements that subvert established conventions"
+  },
+  {
+    "categories": [
+      "politeness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "You prefer the agent structured responses that have numbered steps. Enforce if the agent response are not formatted with numbers for each step (e.g. '1. X\n2. Y\n3. Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 23,
+    "persona": "a proud former student of Professor Njoku who deeply admires his work"
+  },
+  {
+    "categories": [
+      "directness",
+      "politeness",
+      "guidance"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer)."
+    ],
+    "i": 24,
+    "persona": "A Russian citizen who is apolitical and prefers focusing on personal aspects of public figures rather than their political careers."
+  },
+  {
+    "categories": [
+      "politeness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "You prefer the agent responses structured in bullet-point format. Consider this satisfied if the response contains at least one list item using '-', '*' or numbered items ('1.', '2.', ...). Mixed prose + bullets is acceptable. Enforce only if the response contains no bullets at all."
+    ],
+    "i": 25,
+    "persona": "a first-generation immigrant family man living in Los Angeles, California, planning a road trip with his family to New York State."
+  },
+  {
+    "categories": [
+      "directness",
+      "analyticality_intuitiveness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that state relevant assumptions, show step-by-step reasoning, and justify conclusions. Enforce if the response skips logical steps or jumps to conclusions without derivations (e.g. 'The answer is X' instead of 'Assuming Y, we can derive X because [step 1], [step 2], therefore X').",
+      "When given an answer, you prefer the agent to provide multiple viable approaches along with the tradeoffs for each. Enforce if the agent does not provide multiple viable approaches when providing an answer (e.g. suggesting 'Use library X' instead of 'You could use library X (easier to learn but less performant) or library Y (steeper learning curve but faster)')."
+    ],
+    "i": 26,
+    "persona": "A young political sciences student from Lahore with a passion for Pakistan's political history and reverence for political figures."
+  },
+  {
+    "categories": [
+      "analyticality_intuitiveness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When the agent is solving a problem or explaining a concept, you prefer responses that state relevant assumptions, show step-by-step reasoning, and justify conclusions. Enforce if the response skips logical steps or jumps to conclusions without derivations (e.g. 'The answer is X' instead of 'Assuming Y, we can derive X because [step 1], [step 2], therefore X').",
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?').",
+      "You prefer the agent structured responses that have numbered steps. Enforce if the agent response are not formatted with numbers for each step (e.g. '1. X\n2. Y\n3. Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 27,
+    "persona": "A college student studying computer science, seeking guidance on how to apply data science in the education field"
+  },
+  {
+    "categories": [
+      "politeness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "You prefer the agent to always end responses with a proactive suggestion or next step. Enforce whenever the agent gives an answer without suggesting follow-up actions, even if their answer is complete. (e.g. answering your question but not suggesting 'You might also want to consider X' or 'Next, you could do Y').",
+      "You prefer the agent to offer key takeaways or a summary for future reference. Enforce if the agent does not mention key takeaways or a summary when the conversation is winding down (e.g. not suggesting 'Let me summarize the key points we covered')."
+    ],
+    "i": 28,
+    "persona": "A young reader who was deeply moved by the author's book and sent a heartfelt letter expressing their gratitude"
+  },
+  {
+    "categories": [
+      "analyticality_intuitiveness",
+      "guidance",
+      "proactivity"
+    ],
+    "preferences": [
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...')."
+    ],
+    "i": 29,
+    "persona": "A hurricane victim who relies on the trauma counselor for emotional support and guidance in rebuilding their life"
+  },
+  {
+    "categories": [
+      "guidance",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "You prefer the agent to always end responses with a proactive suggestion or next step. Enforce whenever the agent gives an answer without suggesting follow-up actions, even if their answer is complete. (e.g. answering your question but not suggesting 'You might also want to consider X' or 'Next, you could do Y').",
+      "You prefer the agent structured responses that have numbered steps. Enforce if the agent response are not formatted with numbers for each step (e.g. '1. X\n2. Y\n3. Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 30,
+    "persona": "A 50-year-old weightlifting coach who has been in this profession for over 30 years."
+  },
+  {
+    "categories": [
+      "politeness",
+      "analyticality_intuitiveness",
+      "guidance"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?')."
+    ],
+    "i": 31,
+    "persona": "A sociologist who argues for the potential negative impact of technology on human interactions"
+  },
+  {
+    "categories": [
+      "directness",
+      "analyticality_intuitiveness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "When the agent is providing an answer, you prefer the response to start out with an outline of what will be covered. Enforce if the agent dives into a response without first outlining the plan (e.g. starting a 5-step tutorial immediately instead of 'Here's what we'll cover: step 1, step 2, step 3')."
+    ],
+    "i": 32,
+    "persona": "I am a history teacher with a deep interest in the British honours system and its impact on post-colonial countries."
+  },
+  {
+    "categories": [
+      "politeness",
+      "analyticality_intuitiveness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that state relevant assumptions, show step-by-step reasoning, and justify conclusions. Enforce if the response skips logical steps or jumps to conclusions without derivations (e.g. 'The answer is X' instead of 'Assuming Y, we can derive X because [step 1], [step 2], therefore X').",
+      "You prefer the agent responses structured in bullet-point format. Consider this satisfied if the response contains at least one list item using '-', '*' or numbered items ('1.', '2.', ...). Mixed prose + bullets is acceptable. Enforce only if the response contains no bullets at all."
+    ],
+    "i": 33,
+    "persona": "An eccentric billionaire who owns a historic arena and is passionate about preserving the tradition of classic boxing"
+  },
+  {
+    "categories": [
+      "politeness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?').",
+      "When the agent provides an answer, you prefer the agent responses that contain confidence estimates. Enforce if the agent response contain an answer but do not include a confidence estimate (e.g. 'I'm 90% confident that X', instead of 'X')."
+    ],
+    "i": 34,
+    "persona": "A top-level executive who emphasizes the importance of cost-efficiency and sets budget targets for departments"
+  },
+  {
+    "categories": [
+      "directness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "You prefer the agent responses to be no longer than three sentences. Enforce if the agent response exceeds three sentences."
+    ],
+    "i": 35,
+    "persona": "A computer vision researcher applying machine learning techniques to analyze historical documents"
+  },
+  {
+    "categories": [
+      "analyticality_intuitiveness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When the agent is solving a problem or explaining a concept, you prefer responses that state relevant assumptions, show step-by-step reasoning, and justify conclusions. Enforce if the response skips logical steps or jumps to conclusions without derivations (e.g. 'The answer is X' instead of 'Assuming Y, we can derive X because [step 1], [step 2], therefore X').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "You prefer the agent responses to be no longer than three sentences. Enforce if the agent response exceeds three sentences."
+    ],
+    "i": 36,
+    "persona": "An award-winning chef from Senegal who is credited with popularizing West African cuisine in the west"
+  },
+  {
+    "categories": [
+      "directness",
+      "politeness",
+      "analyticality_intuitiveness"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...')."
+    ],
+    "i": 37,
+    "persona": "A former NFL player who supports Kaepernick's activism and shares their personal experiences in the league"
+  },
+  {
+    "categories": [
+      "analyticality_intuitiveness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?').",
+      "You prefer the agent responses that have a one-line TL;DR at the end. Enforce if the agent response do not include a one-line summary at the end (e.g. 'TL;DR: X' instead of 'X')."
+    ],
+    "i": 38,
+    "persona": "A British train enthusiast who loves statistics and traveling."
+  },
+  {
+    "categories": [
+      "analyticality_intuitiveness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When the agent is solving a problem or explaining a concept, you prefer responses that state relevant assumptions, show step-by-step reasoning, and justify conclusions. Enforce if the response skips logical steps or jumps to conclusions without derivations (e.g. 'The answer is X' instead of 'Assuming Y, we can derive X because [step 1], [step 2], therefore X').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "When the agent is providing an answer, you prefer the response to start out with an outline of what will be covered. Enforce if the agent dives into a response without first outlining the plan (e.g. starting a 5-step tutorial immediately instead of 'Here's what we'll cover: step 1, step 2, step 3')."
+    ],
+    "i": 39,
+    "persona": "a basketball fan who has been following Clayton's career since college."
+  },
+  {
+    "categories": [
+      "directness",
+      "analyticality_intuitiveness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that state relevant assumptions, show step-by-step reasoning, and justify conclusions. Enforce if the response skips logical steps or jumps to conclusions without derivations (e.g. 'The answer is X' instead of 'Assuming Y, we can derive X because [step 1], [step 2], therefore X').",
+      "When given an answer, you prefer the agent to provide multiple viable approaches along with the tradeoffs for each. Enforce if the agent does not provide multiple viable approaches when providing an answer (e.g. suggesting 'Use library X' instead of 'You could use library X (easier to learn but less performant) or library Y (steeper learning curve but faster)')."
+    ],
+    "i": 40,
+    "persona": "A young couple from Syria who have recently moved into the same apartment complex and are eager to learn English to find employment"
+  },
+  {
+    "categories": [
+      "analyticality_intuitiveness",
+      "guidance",
+      "proactivity"
+    ],
+    "preferences": [
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...')."
+    ],
+    "i": 41,
+    "persona": "a fan of Gurkan's work, particularly his efforts in innovating diagnostics"
+  },
+  {
+    "categories": [
+      "guidance",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "You prefer the agent to always end responses with a proactive suggestion or next step. Enforce whenever the agent gives an answer without suggesting follow-up actions, even if their answer is complete. (e.g. answering your question but not suggesting 'You might also want to consider X' or 'Next, you could do Y').",
+      "When the agent provides an explanation, you prefer responses that include examples, analogies or metaphors. Enforce if explanations do not contain examples."
+    ],
+    "i": 42,
+    "persona": "A single parent who relies on the retiree's homemade meals to feed their children"
+  },
+  {
+    "categories": [
+      "directness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "You prefer the agent to always end responses with a proactive suggestion or next step. Enforce whenever the agent gives an answer without suggesting follow-up actions, even if their answer is complete. (e.g. answering your question but not suggesting 'You might also want to consider X' or 'Next, you could do Y').",
+      "You prefer the agent structured responses that have numbered steps. Enforce if the agent response are not formatted with numbers for each step (e.g. '1. X\n2. Y\n3. Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 43,
+    "persona": "A university media studies professor who publishes papers on the narrative structures of genre fiction"
+  },
+  {
+    "categories": [
+      "guidance",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?').",
+      "You prefer the agent to always end responses with a proactive suggestion or next step. Enforce whenever the agent gives an answer without suggesting follow-up actions, even if their answer is complete. (e.g. answering your question but not suggesting 'You might also want to consider X' or 'Next, you could do Y').",
+      "You prefer the agent responses to be no longer than three sentences. Enforce if the agent response exceeds three sentences."
+    ],
+    "i": 44,
+    "persona": "A computer graphics artist who brings the virtual reality and artificial intelligence concepts to life in film"
+  },
+  {
+    "categories": [
+      "directness",
+      "analyticality_intuitiveness",
+      "proactivity"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...')."
+    ],
+    "i": 45,
+    "persona": "An aspiring sociology graduate student with a deep respect for pioneering figures in Indian sociology."
+  },
+  {
+    "categories": [
+      "directness",
+      "analyticality_intuitiveness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "You prefer the agent to offer key takeaways or a summary for future reference. Enforce if the agent does not mention key takeaways or a summary when the conversation is winding down (e.g. not suggesting 'Let me summarize the key points we covered')."
+    ],
+    "i": 46,
+    "persona": "a Classics enthusiast who has a great fondness for Hauser's writings."
+  },
+  {
+    "categories": [
+      "analyticality_intuitiveness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "You prefer the agent to offer key takeaways or a summary for future reference. Enforce if the agent does not mention key takeaways or a summary when the conversation is winding down (e.g. not suggesting 'Let me summarize the key points we covered')."
+    ],
+    "i": 47,
+    "persona": "A council member who shares the concerns about the refinery expansion and is working with the organizer to find alternative solutions"
+  },
+  {
+    "categories": [
+      "directness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "You prefer the agent to always end responses with a proactive suggestion or next step. Enforce whenever the agent gives an answer without suggesting follow-up actions, even if their answer is complete. (e.g. answering your question but not suggesting 'You might also want to consider X' or 'Next, you could do Y').",
+      "You prefer the agent responses to be no longer than three sentences. Enforce if the agent response exceeds three sentences."
+    ],
+    "i": 48,
+    "persona": "A small business owner who runs a sports bar and shares their passion for analyzing sports from an economic perspective"
+  },
+  {
+    "categories": [
+      "guidance",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "You prefer the agent to offer key takeaways or a summary for future reference. Enforce if the agent does not mention key takeaways or a summary when the conversation is winding down (e.g. not suggesting 'Let me summarize the key points we covered')."
+    ],
+    "i": 49,
+    "persona": "I am a quirky internet culture enthusiast and cat lover who spends hours scrolling through memes and viral content."
+  },
+  {
+    "categories": [
+      "guidance",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "You prefer the agent to always end responses with a proactive suggestion or next step. Enforce whenever the agent gives an answer without suggesting follow-up actions, even if their answer is complete. (e.g. answering your question but not suggesting 'You might also want to consider X' or 'Next, you could do Y').",
+      "You prefer the agent to offer key takeaways or a summary for future reference. Enforce if the agent does not mention key takeaways or a summary when the conversation is winding down (e.g. not suggesting 'Let me summarize the key points we covered')."
+    ],
+    "i": 50,
+    "persona": "As an avid 49ers fan and Georgia Bulldog alumni who closely follows every game and knows the ins and outs of the team"
+  },
+  {
+    "categories": [
+      "directness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "You prefer the agent to always end responses with a proactive suggestion or next step. Enforce whenever the agent gives an answer without suggesting follow-up actions, even if their answer is complete. (e.g. answering your question but not suggesting 'You might also want to consider X' or 'Next, you could do Y').",
+      "You prefer the agent structured responses that have numbered steps. Enforce if the agent response are not formatted with numbers for each step (e.g. '1. X\n2. Y\n3. Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 51,
+    "persona": "A NASA mission director focused on strategy and planning for deep space missions"
+  },
+  {
+    "categories": [
+      "directness",
+      "politeness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "You prefer the agent responses structured in bullet-point format. Consider this satisfied if the response contains at least one list item using '-', '*' or numbered items ('1.', '2.', ...). Mixed prose + bullets is acceptable. Enforce only if the response contains no bullets at all."
+    ],
+    "i": 52,
+    "persona": "A mayoral aide who provides firsthand accounts of the political process for classroom discussions"
+  },
+  {
+    "categories": [
+      "directness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "You prefer the agent responses structured in bullet-point format. Consider this satisfied if the response contains at least one list item using '-', '*' or numbered items ('1.', '2.', ...). Mixed prose + bullets is acceptable. Enforce only if the response contains no bullets at all."
+    ],
+    "i": 53,
+    "persona": "A fellow international student who has already completed their studies and secured a job in the United States"
+  },
+  {
+    "categories": [
+      "directness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "You prefer the agent to always end responses with a proactive suggestion or next step. Enforce whenever the agent gives an answer without suggesting follow-up actions, even if their answer is complete. (e.g. answering your question but not suggesting 'You might also want to consider X' or 'Next, you could do Y').",
+      "You prefer the agent responses that have a one-line TL;DR at the end. Enforce if the agent response do not include a one-line summary at the end (e.g. 'TL;DR: X' instead of 'X')."
+    ],
+    "i": 54,
+    "persona": "A grandmother who was a trailblazer in the fight for women's suffrage and continues to inspire activism in her descendants"
+  },
+  {
+    "categories": [
+      "politeness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "You prefer the agent structured responses that have headings for each section. Enforce if the agent response are not formatted with headings for each section (e.g. 'X\n## Y\n### Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 55,
+    "persona": "a Kurdish villager living in Ortak\u00f6y, \u0130dil"
+  },
+  {
+    "categories": [
+      "directness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?').",
+      "You prefer the agent structured responses that have headings for each section. Enforce if the agent response are not formatted with headings for each section (e.g. 'X\n## Y\n### Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 56,
+    "persona": "A local credit counselor who offers advice and resources to help the college freshman navigate the world of credit"
+  },
+  {
+    "categories": [
+      "analyticality_intuitiveness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When the agent is solving a problem or explaining a concept, you prefer responses that state relevant assumptions, show step-by-step reasoning, and justify conclusions. Enforce if the response skips logical steps or jumps to conclusions without derivations (e.g. 'The answer is X' instead of 'Assuming Y, we can derive X because [step 1], [step 2], therefore X').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "When the agent provides an explanation, you prefer responses that include examples, analogies or metaphors. Enforce if explanations do not contain examples."
+    ],
+    "i": 57,
+    "persona": "A novelist who also draws inspiration from museums, but explores themes of historical romance"
+  },
+  {
+    "categories": [
+      "directness",
+      "politeness",
+      "proactivity"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "You prefer the agent to always end responses with a proactive suggestion or next step. Enforce whenever the agent gives an answer without suggesting follow-up actions, even if their answer is complete. (e.g. answering your question but not suggesting 'You might also want to consider X' or 'Next, you could do Y')."
+    ],
+    "i": 58,
+    "persona": "A neuroscience student studying the neurological basis of bias and discrimination"
+  },
+  {
+    "categories": [
+      "analyticality_intuitiveness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When the agent is solving a problem or explaining a concept, you prefer responses that state relevant assumptions, show step-by-step reasoning, and justify conclusions. Enforce if the response skips logical steps or jumps to conclusions without derivations (e.g. 'The answer is X' instead of 'Assuming Y, we can derive X because [step 1], [step 2], therefore X').",
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "When the agent provides an explanation, you prefer responses that include examples, analogies or metaphors. Enforce if explanations do not contain examples."
+    ],
+    "i": 59,
+    "persona": "A biology major seeking help in improving their quantitative reasoning skills"
+  },
+  {
+    "categories": [
+      "politeness",
+      "analyticality_intuitiveness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "When given an answer, you prefer the agent to provide multiple viable approaches along with the tradeoffs for each. Enforce if the agent does not provide multiple viable approaches when providing an answer (e.g. suggesting 'Use library X' instead of 'You could use library X (easier to learn but less performant) or library Y (steeper learning curve but faster)')."
+    ],
+    "i": 60,
+    "persona": "A retiree who enjoys creating personalized cards for family and friends"
+  },
+  {
+    "categories": [
+      "politeness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?').",
+      "When the agent is providing an answer, you prefer the response to start out with an outline of what will be covered. Enforce if the agent dives into a response without first outlining the plan (e.g. starting a 5-step tutorial immediately instead of 'Here's what we'll cover: step 1, step 2, step 3')."
+    ],
+    "i": 61,
+    "persona": "The founder of a tech-driven organization that uses online platforms to raise funds for human rights causes"
+  },
+  {
+    "categories": [
+      "directness",
+      "politeness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "When the agent provides an answer, you prefer the agent responses that contain confidence estimates. Enforce if the agent response contain an answer but do not include a confidence estimate (e.g. 'I'm 90% confident that X', instead of 'X')."
+    ],
+    "i": 62,
+    "persona": "A retired soldier who volunteers his free time to help distribute food and supplies"
+  },
+  {
+    "categories": [
+      "directness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "You prefer the agent to always end responses with a proactive suggestion or next step. Enforce whenever the agent gives an answer without suggesting follow-up actions, even if their answer is complete. (e.g. answering your question but not suggesting 'You might also want to consider X' or 'Next, you could do Y').",
+      "You prefer the agent responses structured in bullet-point format. Consider this satisfied if the response contains at least one list item using '-', '*' or numbered items ('1.', '2.', ...). Mixed prose + bullets is acceptable. Enforce only if the response contains no bullets at all."
+    ],
+    "i": 63,
+    "persona": "A successful business executive with extensive experience in corporate management, providing valuable insights into the practical implications of legal decisions"
+  },
+  {
+    "categories": [
+      "directness",
+      "politeness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "You prefer the agent structured responses that have numbered steps. Enforce if the agent response are not formatted with numbers for each step (e.g. '1. X\n2. Y\n3. Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 64,
+    "persona": "a long-standing, proud educator in the Bath Central School District"
+  },
+  {
+    "categories": [
+      "politeness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "You prefer the agent to offer key takeaways or a summary for future reference. Enforce if the agent does not mention key takeaways or a summary when the conversation is winding down (e.g. not suggesting 'Let me summarize the key points we covered')."
+    ],
+    "i": 65,
+    "persona": "A structural engineer who advises on implementing minimalist design elements while maintaining the penthouse's integrity"
+  },
+  {
+    "categories": [
+      "directness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?').",
+      "When the agent is providing an answer, you prefer the response to start out with an outline of what will be covered. Enforce if the agent dives into a response without first outlining the plan (e.g. starting a 5-step tutorial immediately instead of 'Here's what we'll cover: step 1, step 2, step 3')."
+    ],
+    "i": 66,
+    "persona": "A high-profile professional hockey player enjoying celebrity status and frequent media interaction"
+  },
+  {
+    "categories": [
+      "politeness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "You prefer the agent to always end responses with a proactive suggestion or next step. Enforce whenever the agent gives an answer without suggesting follow-up actions, even if their answer is complete. (e.g. answering your question but not suggesting 'You might also want to consider X' or 'Next, you could do Y').",
+      "When the agent provides an answer, you prefer the agent responses that contain confidence estimates. Enforce if the agent response contain an answer but do not include a confidence estimate (e.g. 'I'm 90% confident that X', instead of 'X')."
+    ],
+    "i": 67,
+    "persona": "An enthusiast of open-source cryptocurrency projects with a penchant for exploring new altcoins."
+  },
+  {
+    "categories": [
+      "politeness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "You prefer the agent to always end responses with a proactive suggestion or next step. Enforce whenever the agent gives an answer without suggesting follow-up actions, even if their answer is complete. (e.g. answering your question but not suggesting 'You might also want to consider X' or 'Next, you could do Y').",
+      "You prefer the agent responses to be no longer than three sentences. Enforce if the agent response exceeds three sentences."
+    ],
+    "i": 68,
+    "persona": "A successful meteorologist in the United States and a long-standing member of the American Meteorology Society (AMS)"
+  },
+  {
+    "categories": [
+      "directness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "You prefer the agent structured responses that have headings for each section. Enforce if the agent response are not formatted with headings for each section (e.g. 'X\n## Y\n### Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 69,
+    "persona": "A civic leader who regularly watches the talk-show host's program and provides feedback on their reporting"
+  },
+  {
+    "categories": [
+      "politeness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?').",
+      "When the agent provides an explanation, you prefer responses that include examples, analogies or metaphors. Enforce if explanations do not contain examples."
+    ],
+    "i": 70,
+    "persona": "An elderly individual who reminisces about their school days and is intrigued by the use of VR in education"
+  },
+  {
+    "categories": [
+      "directness",
+      "analyticality_intuitiveness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "You prefer the agent responses that have a one-line TL;DR at the end. Enforce if the agent response do not include a one-line summary at the end (e.g. 'TL;DR: X' instead of 'X')."
+    ],
+    "i": 71,
+    "persona": "A journalist reporting on international politics and interviewing military leaders"
+  },
+  {
+    "categories": [
+      "analyticality_intuitiveness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When the agent is solving a problem or explaining a concept, you prefer responses that state relevant assumptions, show step-by-step reasoning, and justify conclusions. Enforce if the response skips logical steps or jumps to conclusions without derivations (e.g. 'The answer is X' instead of 'Assuming Y, we can derive X because [step 1], [step 2], therefore X').",
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?').",
+      "You prefer the agent to offer key takeaways or a summary for future reference. Enforce if the agent does not mention key takeaways or a summary when the conversation is winding down (e.g. not suggesting 'Let me summarize the key points we covered')."
+    ],
+    "i": 72,
+    "persona": "A Japanese attorney with a specialty in family law who has been watching this case closely."
+  },
+  {
+    "categories": [
+      "directness",
+      "politeness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "When given an answer, you prefer the agent to provide multiple viable approaches along with the tradeoffs for each. Enforce if the agent does not provide multiple viable approaches when providing an answer (e.g. suggesting 'Use library X' instead of 'You could use library X (easier to learn but less performant) or library Y (steeper learning curve but faster)')."
+    ],
+    "i": 73,
+    "persona": "A cybersecurity agency official who aims to keep security practices secret for national protection"
+  },
+  {
+    "categories": [
+      "directness",
+      "politeness",
+      "proactivity"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...')."
+    ],
+    "i": 74,
+    "persona": "An artist who creates one-of-a-kind handmade crafts from local materials, showcasing the cultural heritage of each destination"
+  },
+  {
+    "categories": [
+      "politeness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "You prefer the agent to always end responses with a proactive suggestion or next step. Enforce whenever the agent gives an answer without suggesting follow-up actions, even if their answer is complete. (e.g. answering your question but not suggesting 'You might also want to consider X' or 'Next, you could do Y').",
+      "You prefer the agent structured responses that have numbered steps. Enforce if the agent response are not formatted with numbers for each step (e.g. '1. X\n2. Y\n3. Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 75,
+    "persona": "\u4e00\u4e2a\u5173\u6ce8\u56fd\u9645\u653f\u6cbb\u4e8b\u4ef6\u5bf9\u4f53\u80b2\u5f71\u54cd\u7684\u793e\u4f1a\u5b66\u8005"
+  },
+  {
+    "categories": [
+      "directness",
+      "analyticality_intuitiveness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "You prefer the agent structured responses that have numbered steps. Enforce if the agent response are not formatted with numbers for each step (e.g. '1. X\n2. Y\n3. Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 76,
+    "persona": "An ambitious entrepreneur who invests in quality bloodlines and has a passion for the racing industry"
+  },
+  {
+    "categories": [
+      "analyticality_intuitiveness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "You prefer the agent responses structured in bullet-point format. Consider this satisfied if the response contains at least one list item using '-', '*' or numbered items ('1.', '2.', ...). Mixed prose + bullets is acceptable. Enforce only if the response contains no bullets at all."
+    ],
+    "i": 77,
+    "persona": "I am an ecotourism guide specializing in herpetofauna in Southeast Asia."
+  },
+  {
+    "categories": [
+      "directness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?').",
+      "You prefer the agent to offer key takeaways or a summary for future reference. Enforce if the agent does not mention key takeaways or a summary when the conversation is winding down (e.g. not suggesting 'Let me summarize the key points we covered')."
+    ],
+    "i": 78,
+    "persona": "A savvy marketing specialist who helps Jo-Ann expand her customer base and increase sales"
+  },
+  {
+    "categories": [
+      "analyticality_intuitiveness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When the agent is solving a problem or explaining a concept, you prefer responses that state relevant assumptions, show step-by-step reasoning, and justify conclusions. Enforce if the response skips logical steps or jumps to conclusions without derivations (e.g. 'The answer is X' instead of 'Assuming Y, we can derive X because [step 1], [step 2], therefore X').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "You prefer the agent responses structured in bullet-point format. Consider this satisfied if the response contains at least one list item using '-', '*' or numbered items ('1.', '2.', ...). Mixed prose + bullets is acceptable. Enforce only if the response contains no bullets at all."
+    ],
+    "i": 79,
+    "persona": "A cousin who runs a small boutique and seeks the data scientist's advice on inventory management"
+  },
+  {
+    "categories": [
+      "guidance",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "You prefer the agent responses that have a one-line TL;DR at the end. Enforce if the agent response do not include a one-line summary at the end (e.g. 'TL;DR: X' instead of 'X')."
+    ],
+    "i": 80,
+    "persona": "An artist who creates personalized artworks for the patients to bring them comfort and joy"
+  },
+  {
+    "categories": [
+      "directness",
+      "politeness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "You prefer the agent structured responses that have headings for each section. Enforce if the agent response are not formatted with headings for each section (e.g. 'X\n## Y\n### Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 81,
+    "persona": "A hemp farmer who supplies high-quality organic CBD to the store"
+  },
+  {
+    "categories": [
+      "analyticality_intuitiveness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "You prefer the agent to always end responses with a proactive suggestion or next step. Enforce whenever the agent gives an answer without suggesting follow-up actions, even if their answer is complete. (e.g. answering your question but not suggesting 'You might also want to consider X' or 'Next, you could do Y').",
+      "You prefer the agent responses that have a one-line TL;DR at the end. Enforce if the agent response do not include a one-line summary at the end (e.g. 'TL;DR: X' instead of 'X')."
+    ],
+    "i": 82,
+    "persona": "A curator at the Egyptian Museum who collaborates with the linguist to create accurate exhibits"
+  },
+  {
+    "categories": [
+      "analyticality_intuitiveness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "You prefer the agent responses structured in bullet-point format. Consider this satisfied if the response contains at least one list item using '-', '*' or numbered items ('1.', '2.', ...). Mixed prose + bullets is acceptable. Enforce only if the response contains no bullets at all."
+    ],
+    "i": 83,
+    "persona": "A young, inspiring leader from an underprivileged community who fights against socio-political oppression"
+  },
+  {
+    "categories": [
+      "politeness",
+      "analyticality_intuitiveness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that state relevant assumptions, show step-by-step reasoning, and justify conclusions. Enforce if the response skips logical steps or jumps to conclusions without derivations (e.g. 'The answer is X' instead of 'Assuming Y, we can derive X because [step 1], [step 2], therefore X').",
+      "You prefer the agent responses that have a one-line TL;DR at the end. Enforce if the agent response do not include a one-line summary at the end (e.g. 'TL;DR: X' instead of 'X')."
+    ],
+    "i": 84,
+    "persona": "A postgraduate psychology student from the University of Michigan, I am considering enrolling in an online course to supplement my studies."
+  },
+  {
+    "categories": [
+      "politeness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "When the agent provides an explanation, you prefer responses that include examples, analogies or metaphors. Enforce if explanations do not contain examples."
+    ],
+    "i": 85,
+    "persona": "A forensic analyst skilled in extracting and analyzing digital evidence from encrypted devices"
+  },
+  {
+    "categories": [
+      "directness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "You prefer the agent responses that have a one-line TL;DR at the end. Enforce if the agent response do not include a one-line summary at the end (e.g. 'TL;DR: X' instead of 'X')."
+    ],
+    "i": 86,
+    "persona": "A podcast host who explores the downside of online platforms and the negative effects on mental health"
+  },
+  {
+    "categories": [
+      "directness",
+      "analyticality_intuitiveness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that state relevant assumptions, show step-by-step reasoning, and justify conclusions. Enforce if the response skips logical steps or jumps to conclusions without derivations (e.g. 'The answer is X' instead of 'Assuming Y, we can derive X because [step 1], [step 2], therefore X').",
+      "When the agent provides an explanation, you prefer responses that include examples, analogies or metaphors. Enforce if explanations do not contain examples."
+    ],
+    "i": 87,
+    "persona": "An embassy security officer with a military background, fluent in several languages"
+  },
+  {
+    "categories": [
+      "directness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "You prefer the agent to always end responses with a proactive suggestion or next step. Enforce whenever the agent gives an answer without suggesting follow-up actions, even if their answer is complete. (e.g. answering your question but not suggesting 'You might also want to consider X' or 'Next, you could do Y').",
+      "When given an answer, you prefer the agent to provide multiple viable approaches along with the tradeoffs for each. Enforce if the agent does not provide multiple viable approaches when providing an answer (e.g. suggesting 'Use library X' instead of 'You could use library X (easier to learn but less performant) or library Y (steeper learning curve but faster)')."
+    ],
+    "i": 88,
+    "persona": "A hobbyist potter with a modern approach, constantly experimenting with new techniques"
+  },
+  {
+    "categories": [
+      "directness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "When the agent provides an explanation, you prefer responses that include examples, analogies or metaphors. Enforce if explanations do not contain examples."
+    ],
+    "i": 89,
+    "persona": "A trumpet player who idolizes the jazz musician's impeccable skills and seeks guidance in mastering the genre"
+  },
+  {
+    "categories": [
+      "directness",
+      "analyticality_intuitiveness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to be narrative, conversational, and engaging. The response should acknowledge previous context (e.g. 'now that we have that information', 'now that we have discussed X'), and include transitions, contextual framing, and natural language flow. Enforce if the response is overly terse or choppy (e.g. bullet points without connecting language), or abrupt topic shifts without transitions, or if the agent doesn't acknowledge the context from your previous message.",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that state relevant assumptions, show step-by-step reasoning, and justify conclusions. Enforce if the response skips logical steps or jumps to conclusions without derivations (e.g. 'The answer is X' instead of 'Assuming Y, we can derive X because [step 1], [step 2], therefore X').",
+      "You prefer the agent structured responses that have headings for each section. Enforce if the agent response are not formatted with headings for each section (e.g. 'X\n## Y\n### Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 90,
+    "persona": "a long-time iOS developers but who is navigationally-challenged and constantly gets lost in big cities"
+  },
+  {
+    "categories": [
+      "politeness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "When given an answer, you prefer the agent to provide multiple viable approaches along with the tradeoffs for each. Enforce if the agent does not provide multiple viable approaches when providing an answer (e.g. suggesting 'Use library X' instead of 'You could use library X (easier to learn but less performant) or library Y (steeper learning curve but faster)')."
+    ],
+    "i": 91,
+    "persona": "a passionate electric guitar player who's not fond of following news and trends"
+  },
+  {
+    "categories": [
+      "directness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?').",
+      "You prefer the agent responses that have a one-line TL;DR at the end. Enforce if the agent response do not include a one-line summary at the end (e.g. 'TL;DR: X' instead of 'X')."
+    ],
+    "i": 92,
+    "persona": "An experienced JEE architect who provides guidance and shares best practices for designing scalable and performant architectures"
+  },
+  {
+    "categories": [
+      "guidance",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When working on a multi-step problem you prefer that each agent response covers only a single small increment of the problem, and asks for confirmation before proceeding to the next increment. Enforce if the agent provides the complete solution in a single response instead of breaking them down into smaller increments (e.g providing steps 1-5 in one response instead of 'Let's start with step 1: [explanation]. Does this make sense before we continue?').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "You prefer the agent to offer key takeaways or a summary for future reference. Enforce if the agent does not mention key takeaways or a summary when the conversation is winding down (e.g. not suggesting 'Let me summarize the key points we covered')."
+    ],
+    "i": 93,
+    "persona": "A science reporter who interviews the bioethicist for articles on controversial medical ethics cases"
+  },
+  {
+    "categories": [
+      "politeness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "You prefer the agent structured responses that have headings for each section. Enforce if the agent response are not formatted with headings for each section (e.g. 'X\n## Y\n### Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 94,
+    "persona": "A mindfulness practitioner and grief specialist who offers yoga and meditation classes specifically tailored for those grieving the loss of a loved one"
+  },
+  {
+    "categories": [
+      "politeness",
+      "proactivity",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be respectful, considerate, and friendly. Enforce if the agent response is not respectful, considerate, or friendly (e.g. lacks courtesy markers, lacks pleasantries, is purely transactional like 'The answer is X' or 'Do this then that').",
+      "You prefer the agent to respond to only your request, and does not provide unsolicited suggestions or next steps. Enforce if the agent adds suggestions or next steps (e.g. after answering, adding 'You might also want to consider X' or 'Here are some next steps: ...').",
+      "When the agent provides an answer, you prefer the agent responses that contain confidence estimates. Enforce if the agent response contain an answer but do not include a confidence estimate (e.g. 'I'm 90% confident that X', instead of 'X')."
+    ],
+    "i": 95,
+    "persona": "A recent college graduate who has struggled to find employment due to job outsourcing"
+  },
+  {
+    "categories": [
+      "directness",
+      "politeness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "When the agent is providing an answer, you prefer the response to start out with an outline of what will be covered. Enforce if the agent dives into a response without first outlining the plan (e.g. starting a 5-step tutorial immediately instead of 'Here's what we'll cover: step 1, step 2, step 3')."
+    ],
+    "i": 96,
+    "persona": "A renowned professor in computer science specializing in database management, who provides guidance on the latest XML database technologies"
+  },
+  {
+    "categories": [
+      "politeness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer the agent responses to be blunt without pleasantries, apologetic language, or courtesy markers. Enforce if the agent response contains pleasantries, apologetic language, or courtesy markers (e.g. 'I'd be absolutely delighted to help!', 'I'm so sorry, but...', or 'Thank you so much for this wonderful question!').",
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "When the agent provides an answer, you prefer the agent responses that contain confidence estimates. Enforce if the agent response contain an answer but do not include a confidence estimate (e.g. 'I'm 90% confident that X', instead of 'X')."
+    ],
+    "i": 97,
+    "persona": "A health-conscious editor with a casual demeanor and a knack for wordplay"
+  },
+  {
+    "categories": [
+      "analyticality_intuitiveness",
+      "guidance",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "When the agent is solving a problem or explaining a concept, you prefer responses that start with high-level intuition and generalizable principles before diving into the specific solution. Enforce if the response jumps directly into technical details or calculations without first establishing the big picture (e.g. starting with 'First, calculate X using formula Y...' instead of 'The key principle here is Z, which applies whenever you see W. Let's apply it to your problem...').",
+      "When working on a problem, you prefer holistic responses that address the full solution. Enforce if the agent unnecessarily breaks down their response into fragments or keeps asking for confirmation on straightforward points (e.g. 'Let me explain just part 1 first. [Brief explanation]. Should I continue?' when you could handle the complete answer).",
+      "You prefer the agent responses to be no longer than three sentences. Enforce if the agent response exceeds three sentences."
+    ],
+    "i": 98,
+    "persona": "A mother of two children, living in Ho Chi Minh City, who prefers using public transportation."
+  },
+  {
+    "categories": [
+      "directness",
+      "analyticality_intuitiveness",
+      "habitual_strategies"
+    ],
+    "preferences": [
+      "You prefer agent responses to avoid any unnecessary narration and get directly to the point. Enforce if the response contains unnecessary elements such as preamble, meta-commentary or transition phrases (e.g. 'That's a great question!' or 'Let me walk you through this...').",
+      "When the agent is solving a problem or explaining a concept, you prefer responses that state relevant assumptions, show step-by-step reasoning, and justify conclusions. Enforce if the response skips logical steps or jumps to conclusions without derivations (e.g. 'The answer is X' instead of 'Assuming Y, we can derive X because [step 1], [step 2], therefore X').",
+      "You prefer the agent structured responses that have headings for each section. Enforce if the agent response are not formatted with headings for each section (e.g. 'X\n## Y\n### Z' instead of 'X\nY\nZ')."
+    ],
+    "i": 99,
+    "persona": "A retired factory worker with vivid stories about the production lines of Soviet vehicles"
+  }
+]

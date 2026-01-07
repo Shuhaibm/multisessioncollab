@@ -1,0 +1,122 @@
+[
+  {
+    "problem": "I have a deck of $54$ cards, and I deal all of the cards to $x$ players, with each player getting $y$ cards. If $x$ is at least $2$ and $y$ is at least $5$, then how many possible values of $x$ are there?",
+    "solution": "We want $xy=54=2 \\cdot 3^3$ such that $x$ is at least $2$ and $y$ is at least  $5$. Thus, the possible combinations $(x,y)$ are $(2,27)$, $(3,18)$, $(6,9)$, and $(9,6)$. There are $\\boxed{4}$ such combinations.",
+    "level": "Level 5",
+    "type": "Prealgebra"
+  },
+  {
+    "problem": "Suppose $f(x)$ is an invertible function, and suppose that $f(2)=f^{-1}(2)=4$.\n\nWhat is the value of $f(f(2))$?",
+    "solution": "Since $f(2)=f^{-1}(2)$, we can substitute $f^{-1}(2)$ freely for $f(2)$. Therefore, $f(f(2)) = f(f^{-1}(2))$, which is $\\boxed{2}$ (since $f(f^{-1}(x))=x$ by definition).\n\nNotice that we didn't actually need the value $4$ given in the problem.",
+    "level": "Level 5",
+    "type": "Algebra"
+  },
+  {
+    "problem": "Solve for $z$ in the following equation: $2-3iz = 3 + 2iz$.",
+    "solution": "$2-3iz = 3 + 2iz \\Rightarrow -1 = 5iz \\Rightarrow z = \\frac{-1}{5i}$. Multiplying the numerator and denominator by $-i$, we get $z = \\frac{-1}{5i} \\cdot \\frac{-i}{-i} = \\boxed{\\frac{i}{5}}$.",
+    "level": "Level 5",
+    "type": "Algebra"
+  },
+  {
+    "problem": "Let $P(x)$ be a polynomial such that\n\\[P(P(x)) + P(x) = 6x\\]for all real numbers $x.$  Find the sum of all possible values of $P(10).$",
+    "solution": "Let $d$ be the degree of $P(x).$  Then the degree of $P(P(x))$ is $d^2.$  Hence, the degree of $P(P(x)) + P(x)$ is $d^2,$ and the degree of $6x$ is 1, so we must have $d = 1.$\n\nAccordingly, let $P(x) = ax + b.$  Then\n\\[a(ax + b) + b + ax + b = 6x.\\]Expanding, we get $(a^2 + a) x + ab + 2b = 6x.$  Comparing coefficients, we get\n\\begin{align*}\na^2 + a &= 6, \\\\\nab + 2b &= 0.\n\\end{align*}From the first equation, $a^2 + a - 6 = 0,$ which factors as $(a - 2)(a + 3) = 0,$ so $a = 2$ or $a = -3.$\n\nFrom the second equation, $(a + 2) b = 0.$  Since $a$ cannot be $-2,$ $b = 0.$\n\nHence, $P(x) = 2x$ or $P(x) = -3x,$ and the sum of all possible values of $P(10)$ is $20 + (-30) = \\boxed{-10}.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra"
+  },
+  {
+    "problem": "Let $a, b$, and $c$ be real numbers such that $a-7b+8c = 4$ and $8a+4b-c = 7$. Find $a^2 - b^2 + c^2.$",
+    "solution": "We have $a+8c = 4+7b$ and $8a-c = 7-4b$. Squaring both equations and adding the results yields $$\n(a+8c)^2 + (8a-c)^2 = (4+7b)^2 + (7-4b)^2.\n$$Expanding gives $65(a^2+c^2) = 65(1+b^2)$. So $a^2 + c^2 = 1 + b^2$, and $a^2-b^2+c^2 = \\boxed{1}$.",
+    "level": "Level 5",
+    "type": "Algebra"
+  },
+  {
+    "problem": "Three mutually tangent spheres of radius 1 rest on a horizontal plane.  A sphere of radius 2 rests on them.  What is the distance from the plane to the top of the larger sphere?",
+    "solution": "Let $A,B,C$ and $E$ be  the centers of the three small spheres and the large sphere, respectively. Then $\\triangle ABC$ is equilateral with side length 2. If $D$ is the intersection of the medians of $\\triangle ABC$, then $E$ is directly above $D$. Because $AE=3$ and $AD=2\\sqrt{3}/3$, it follows that \\[\nDE= \\sqrt{3^{2}-\\left(\\frac{2\\sqrt{3}}{3}\\right)^{2}}= \\frac{\\sqrt{69}}{3}.\n\\]Because $D$ is 1 unit above the plane and the top of the larger sphere is 2 units above $E$, the distance from the plane to the top of the larger sphere is \\[\n\\boxed{3+ \\frac{\\sqrt{69}}{3}}.\n\\][asy]\npair A,B,C,D;\nA=(10,0);\nB=(0,0);\nC=(5,8.7);\nD=(5,2.9);\ndraw(Circle(A,5),linewidth(0.7));\ndraw(Circle(B,5),linewidth(0.7));\ndraw(Circle(C,5),linewidth(0.7));\ndraw(A--B--C--cycle,linewidth(0.7));\ndraw(C--D--B,linewidth(0.7));\ndraw(D--A,linewidth(0.7));\nlabel(\"1\",(2.5,0),S);\nlabel(\"1\",(7.5,0),S);\nlabel(\"$A$\",(10,0),SE);\nlabel(\"$B$\",(0,0),SW);\nlabel(\"$C$\",(5,8.7),N);\nlabel(\"$D$\",(3,4),S);\n[/asy]",
+    "level": "Level 5",
+    "type": "Geometry"
+  },
+  {
+    "problem": "Find all angles $x$, $0^\\circ \\le x < 180^\\circ,$ such that\n\\[\\sin 6x + \\cos 4x = 0.\\]Enter all the solutions, separated by commas.",
+    "solution": "We can write\n\\[\\sin 6x + \\cos 4x = \\sin 6x + \\sin (90^\\circ - 4x).\\]Then from the sum-to-product formula,\n\\begin{align*}\n\\sin 6x + \\sin (90^\\circ - 4x) &= 2 \\sin \\left( \\frac{6x + 90^\\circ - 4x}{2} \\right) \\cos \\left( \\frac{6x - (90^\\circ - 4x)}{2} \\right) \\\\\n&= 2 \\sin (x + 45^\\circ) \\cos (5x - 45^\\circ).\n\\end{align*}Thus, $\\sin (x + 45^\\circ) = 0$ or $\\cos (5x - 45^\\circ) = 0.$\n\nIf $\\sin (x + 45^\\circ) = 0,$ then $x = 135^\\circ.$\n\nIf $\\cos (5x - 45^\\circ) = 0,$ then $5x - 45^\\circ$ must be $90^\\circ,$ $270^\\circ,$ $450^\\circ,$ $630^\\circ,$ or $810^\\circ.$  These lead to the solutions $\\boxed{27^\\circ, 63^\\circ, 99^\\circ, 135^\\circ, 171^\\circ}.$",
+    "level": "Level 5",
+    "type": "Precalculus"
+  },
+  {
+    "problem": "Compute $121_3+2122_3-1200_3-2111_3$. Express your answer in base 3.",
+    "solution": "It doesn't matter the order in which we add and subtract values, but we'll start with $2122_3-2111_3$ since the values are close. $$ \\begin{array}{c@{}c@{\\;}c@{}c@{}c@{}c} & & 2& 1 & 2 & 2_3\\\\ &- & 2 & 1 & 1 & 1_3\\\\ \\cline{2-6} & & & & 1 & 1_3\\\\ \\end{array} $$Now we're left with  $121_3-1200_3+11_3$. We add $121_3+11_3$. $$ \\begin{array}{c@{}c@{\\;}c@{}c@{}c@{}c} & & & 1 & 2 & 1_3\\\\ &+ & & & 1 & 1_3\\\\ \\cline{2-6} & & & 2 & 0 & 2_3\\\\ \\end{array} $$So we have $202_3-1200_3=-(1200_3-202_3)$. $$ \\begin{array}{c@{}c@{\\;}c@{}c@{}c@{}c} & & 1 & 2 & 0 & 0_3\\\\ &-& & 2 & 0 & 2_3\\\\ \\cline{2-6} & & & 2 & 2 & 1_3\\\\ \\end{array} $$Our answer is $\\boxed{-221_3}$.",
+    "level": "Level 5",
+    "type": "Number Theory"
+  },
+  {
+    "problem": "What is the minimum value of the expression $x^2+y^2+2x-4y+8$ for real $x$ and $y$?",
+    "solution": "Rearranging the expression, we have  \\[x^2+2x+y^2-4y+8\\]Completing the square in $x$, we need to add and subtract $(2/2)^2=1$. Completing the square in $y$, we need to add and subtract $(4/2)^2=4$. Thus, we have \\[(x^2+2x+1)-1+(y^2-4y+4)-4+8 \\Rightarrow (x+1)^2+(y-2)^2+3\\]Since the minimum value of $(x+1)^2$ and $(y-2)^2$ is $0$ (perfect squares can never be negative), the minimum value of the entire expression is $\\boxed{3}$, and is achieved when $x=-1$ and $y=2$.",
+    "level": "Level 5",
+    "type": "Algebra"
+  },
+  {
+    "problem": "A birdbath is designed to overflow so that it will be self-cleaning.  Water flows in at the rate of 20 milliliters per minute and drains at the rate of 18 milliliters per minute.  One of these graphs shows the volume of water in the birdbath during the filling time and continuing into the overflow time.  Which one is it?\n\n[asy]\n/* AMC8 2002 #6 Problem */\nsize(3inch,0.75inch);\nfor ( int x = 0; x <= 4; ++x )\n{\n\ndraw((x*1.5,1)--(x*1.5,0)--(x*1.5+1,0));\n\nlabel(rotate(90)*scale(0.7)*\"Volume\", (x*1.5-.2,.5));\n}\nlabel(\"$A$\", (.5,0), S);\nlabel(\"$B$\", (2,0), S);\nlabel(\"$C$\", (3.5,0), S);\nlabel(\"$D$\", (5,0), S);\nlabel(\"$E$\", (6.5,0), S);\ndraw((0,0)--(.5,.5)--(1,.5),linewidth(1));\ndraw((1.5,0.6)--(1.8,0.6)--(2.5,0), linewidth(1));\ndraw((3,0)--(4,.75), linewidth(1));\ndraw((4.5,.8)--(5.5,.8), linewidth(1));\ndraw((6,0)--(6.5,.5)--(7,0), linewidth(1));\n[/asy]\n\nProvide the correct letter (A, B, C, D, or E) answer.",
+    "solution": "Initially, volume increases with time as shown by graphs $A$, $C$, and $E$.  But once the birdbath is full, the volume remains constant as the birdbath overflows.  Only graph $\\boxed{A}$ shows both features.",
+    "level": "Level 5",
+    "type": "Prealgebra"
+  },
+  {
+    "problem": "Consider two infinite geometric series. The first has leading term $a,$ common ratio $b,$ and sum $S.$ The second has a leading term $b,$ common ratio $a,$ and sum $1/S.$ Find the value of $a+b.$",
+    "solution": "Writing $S$ in terms of $a$ and $b,$ $\\frac{a}{1-b}=S$ and $\\frac{b}{1-a} = \\frac{1}{S}.$ Thus, equating the second equation with the reciprocal of the first, \\[\\frac{1}{S}=\\frac{1-b}{a}=\\frac{b}{1-a}.\\]Cross multiplying and simplifying, $ab=(1-a)(1-b)$ and the result is $a+b=\\boxed{1}.$",
+    "level": "Level 5",
+    "type": "Algebra"
+  },
+  {
+    "problem": "Express the infinite series $$\\frac{3}{206}+\\frac{9}{2\\cdot103^2}+\\frac{27}{2\\cdot103^3}+\\cdots$$as a terminating decimal.",
+    "solution": "We start by factoring $\\frac{1}{2}$ from all terms in the series to get $$\\frac{1}{2}\\left(\\frac{3}{103}+\\frac{9}{103^2}+\\frac{27}{103^3}+\\cdots\\right).$$Next we recognize the series as a geometric series and apply the formula for the sum of a geometric series $\\left(\\frac{a}{1-r}\\right)$: $$\\frac{1}{2}\\left(\\frac{\\frac{3}{103}}{1-\\frac{3}{103}}\\right)=\\frac{1}{2}\\left(\\frac{3}{103-3}\\right)=\\frac{1}{2}\\cdot\\frac{3}{100}.$$To turn the fraction into a terminating decimal, we recognize that $\\frac{3}{100}=0.03$ and half of 0.03 is $\\boxed{0.015}$.",
+    "level": "Level 5",
+    "type": "Algebra"
+  },
+  {
+    "problem": "Let  \\[f(x) =\n\\begin{cases}\nk(x) &\\text{if }x>3, \\\\\nx^2-6x+12&\\text{if }x\\leq3.\n\\end{cases}\n\\] Find the function $k(x)$ such that $f$ is its own inverse.",
+    "solution": "Notice that since the linear term of the quadratic is $-6,$ the vertex of the parabola that is the left side of $f$ is at $x=3.$ Therefore it might help to complete the square. \\[x^2-6x+12=(x^2-6x+9)+3=(x-3)^2+3.\\]We want to have that $f(f(x))=x$ for every $x.$ Since $f(f(3))=3,$ we know $f$ is its own inverse at $x=3,$ so we can restrict our attention to $x\\neq 3.$\n\nSince $f$ applied to any number less than $3$ returns a number greater than $3,$ and we can get all numbers greater than $3$ this way, applying $f$ to any number greater than $3$ must give a number less than $3.$ Therefore $k(x)<3$ for any $x>3.$\n\nIf $x>3$ and $f$ is its own inverse then \\[x=f(f(x))=f(k(x))=3+\\left(k(x)-3\\right)^2,\\]where in the last step we used that $k(x)<3.$ Subtracting $3$ from both sides gives \\[\\left(k(x)-3\\right)^2 = x-3.\\]Since we must have $k(x) < 3,$ we know that $k(x) - 3$ is the negative number whose square is $x-3.$ Therefore, we have $k(x) - 3 = -\\sqrt{x-3}.$ Solving this for $k(x)$ gives  \\[k(x)=\\boxed{-\\sqrt{x-3}+3}.\\]",
+    "level": "Level 5",
+    "type": "Algebra"
+  },
+  {
+    "problem": "Each of the integers $1,$ $2,$ $3,$ $\\dots,$ $16$ is written on a separate slip of paper and these slips are placed in a pile. Jillian will randomly draw slips from the pile without replacement and will continue drawing until two of the numbers she has drawn from the pile have a product that is a perfect square. What is the maximum number of slips that Jillian can draw without obtaining a product that is a perfect square?",
+    "solution": "Recall that an integer is called square-free if the only exponent which appears in the prime factorization of the integer is $1.$ For example, $2\\cdot3\\cdot11$ is square-free, but $7^3\\cdot13$ and $2^2\\cdot3$ are not. We define the \"square-free part\" of a positive integer which is not a perfect square to be largest square-free factor of the integer. For example, the square-free part of $18$ is $6,$ and the square-free part of $54$ is $6.$ Perfect squares have a square-free part of $1.$\n\nNotice that two positive integers multiply to give a perfect square if and only if either their square free parts are equal or the integers are both perfect squares. Therefore, if we look at the square free parts of the integers between $1$ and $16,$ the maximum number of slips that Jillian can draw is the number of distinct square free parts that appear. The table below (broken into two lines) shows the square-free parts of the integers between $1$ and $16.$ \\begin{tabular}{cccccccc}\n1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\\\ \\hline\n1 & 2 & 3 & 1 & 5 & 6 & 7 & 2\n\\end{tabular} \\begin{tabular}{cccccccc}\n9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 \\\\ \\hline\n1 & 10 & 11 & 3 & 13 & 14 & 15 & 1\n\\end{tabular} Jillian may draw the slips marked $5,$ $6,$ $7,$ $10,$ $11,$ $13,$ $14,$ and $15,$ as well as one from each of the sets $\\{1,4,9,16\\},$ $\\{2,8\\},$ and $\\{3,12\\}$ for a total of $\\boxed{11}$ slips.",
+    "level": "Level 5",
+    "type": "Number Theory"
+  },
+  {
+    "problem": "Find all real $x \\in [0, 2 \\pi]$ such that\n\\[\\tan 7x - \\sin 6x = \\cos 4x - \\cot 7x.\\]Enter all the real solutions, separated by commas.",
+    "solution": "Writing everything in terms of sine and cosine and rearranging, we have:\n\\begin{align*}\n\\frac{\\sin 7x}{\\cos 7x} - \\sin 6x &= \\cos 4x - \\frac{\\cos 7x}{\\sin 7x} \\\\\n\\Leftrightarrow \\quad \\frac{\\sin 7x}{\\cos 7x} + \\frac{\\cos 7x}{\\sin 7x} &= \\cos 4x + \\sin 6x \\\\\n\\Leftrightarrow \\quad \\frac{\\sin^2 7x + \\cos^2 7x}{\\sin 7x \\cos 7x} &= \\cos 4x + \\sin 6x \\\\\n\\Leftrightarrow \\quad \\frac{1}{\\sin 7x \\cos 7x} &= \\cos 4x + \\sin 6x \\\\\n\\Leftrightarrow \\quad \\frac{2}{\\sin 14x} &= \\cos 4x + \\sin 6x \\\\\n\\Leftrightarrow \\quad 2 &= \\sin 14x (\\cos 4x + \\sin 6x).\n\\end{align*}Since the range of sine and cosine are $[-1,1]$, $|\\sin 14x| \\le 1$ and $|\\cos 4x + \\sin 6x| \\le 2$ for all $x$.  Since the product of these two expressions is 2, they must all attain the maximum value.  That is, $|\\sin 14x| = 1$, $|\\sin 6x| = 1$, and $\\cos 4x = \\sin 6x$.  There are two cases:\n\nCase 1: If $\\sin 14x = -1$, then $\\cos 4x = \\sin 6x = -1$.  So $4x = k \\pi$, where $k$ is an odd integer.  Then for $x$ between 0 and $2\\pi$, we have $x = \\frac{\\pi}{4},$ $\\frac{3\\pi}{4},$ $\\frac{5\\pi}{4},$ $\\frac{7\\pi}{4}.$  It is not difficult to verify that only $x = \\frac{\\pi}{4}$ and $x = \\frac{5\\pi}{4}$ satisfy the other two equations.\n\nCase 2: If $\\sin 14x = 1$, then $\\cos 4x = \\sin 6x = 1$.  So $4x = k \\pi$, where $k$ is an even integer.  For $x$ between 0 and $2\\pi$, we have $x = 0,$ $\\frac{\\pi}{2},$ $\\pi,$ $\\frac{3\\pi}{2},$ $2 \\pi.$  Note that for all four possible values of $x$, $6x$ is a multiple of $\\pi$, and $\\sin 6x = 0$.  Therefore, there are no solutions in this case.\n\nIn conclusion, the solutions of $x$ between 0 and $2\\pi$ are $\\boxed{\\frac{\\pi}{4}}$ and $\\boxed{\\frac{5\\pi}{4}}$.",
+    "level": "Level 5",
+    "type": "Precalculus"
+  },
+  {
+    "problem": "In BINGO, a $5\\times5$ card is filled by marking the middle square as WILD and placing 24 other numbers in the remaining 24 squares.\n\n\nSpecifically a card is made by placing 5 numbers from the set $1-15$ in the first column, 5 numbers from $16-30$ in the second column, 4 numbers $31-45$ in the third column (skipping the WILD square in the middle), 5 numbers from $46-60$ in the fourth column and 5 numbers from $61-75$ in the last column.\n\nOne possible BINGO card is:\n\n[asy]\nfor (int i=0; i<6;++i) {\ndraw((i,0)--(i,5));\ndraw((0,i)--(5,i));\n}\nlabel(\"$1$\",(.5,0.5));\nlabel(\"$2$\",(.5,1.5));\nlabel(\"$3$\",(.5,2.5));\nlabel(\"$4$\",(.5,3.5));\nlabel(\"$5$\",(.5,4.5));\n\nlabel(\"$20$\",(1.5,0.5));\nlabel(\"$19$\",(1.5,1.5));\nlabel(\"$18$\",(1.5,2.5));\nlabel(\"$17$\",(1.5,3.5));\nlabel(\"$16$\",(1.5,4.5));\n\nlabel(\"$31$\",(2.5,0.5));\nlabel(\"$32$\",(2.5,1.5));\nlabel(\"Wild\",(2.5,2.5));\nlabel(\"$34$\",(2.5,3.5));\nlabel(\"$35$\",(2.5,4.5));\n\nlabel(\"$50$\",(3.5,0.5));\nlabel(\"$49$\",(3.5,1.5));\nlabel(\"$48$\",(3.5,2.5));\nlabel(\"$47$\",(3.5,3.5));\nlabel(\"$46$\",(3.5,4.5));\n\nlabel(\"$71$\",(4.5,0.5));\nlabel(\"$72$\",(4.5,1.5));\nlabel(\"$73$\",(4.5,2.5));\nlabel(\"$74$\",(4.5,3.5));\nlabel(\"$75$\",(4.5,4.5));\n\n[/asy]\n\nTo play BINGO, someone names numbers, chosen at random, and players mark those numbers on their cards.  A player wins when he marks 5 in a row, horizontally, vertically, or diagonally.\n\nHow many distinct possibilities are there for the values in the diagonal going from top left to bottom right of a BINGO card, in order?",
+    "solution": "The middle square is WILD, so we do not need to consider it in our count.\n\nThere are 15 choices for the first number.  Since the second number cannot be equal to the first number, there are also 15 choices for the second number.  Likewise, there are 15 choices for the third and fourth numbers.  Therefore there are  \\[15^4=\\boxed{50,\\!625}\\]total choices for this diagonal.",
+    "level": "Level 5",
+    "type": "Prealgebra"
+  },
+  {
+    "problem": "William Sydney Porter tried to perform the calculation $\\frac{-3+4i}{1+2i}$. However, he accidentally missed the minus sign, finding $\\frac{3+4i}{1+2i}=\\frac{11}{5}-\\frac{2}{5}i$. What answer should he have obtained?",
+    "solution": "To perform division in complex numbers, we multiply both the numerator and the denominator by the conjugate of the denominator. In this case, the conjugate of $1+2i$ is $1-2i$. Multiplying: \\begin{align*}\n\\frac{-3+4i}{1+2i}&=\\frac{(-3+4i)(1-2i)}{(1+2i)(1-2i)}\\\\\n&=\\frac{-3+4i+6i-8i^2}{1+2i-2i-4i^2}\\\\\n&=\\frac{5+10i}{5}\\\\\n&=\\boxed{1+2i}\n\\end{align*}",
+    "level": "Level 5",
+    "type": "Algebra"
+  },
+  {
+    "problem": "One of the roots of\n\\[z^4 + az^3 + 5z^2 - iz - 6 = 0\\]is $2i,$ where $a$ is a complex number.  Enter the other three roots, separated by commas.",
+    "solution": "Since $2i$ is a root,\n\\[(2i)^4 + a(2i)^3 + 5(2i)^2 - i(2i) - 6 = 0.\\]Solving, we find $a = i,$ so the polynomial is\n\\[z^4 + iz^3 + 5z^2 - iz - 6 = 0.\\]We can take out a factor of $z - 2i,$ to get\n\\[(z - 2i)(z^3 + 3iz^2 - z - 3i) = 0.\\]We can check that $z = 1$ and $z = -1$ are solutions of the cubic, so we can take out factors of $z - 1$ and $z + 1,$ to get\n\\[(z - 2i)(z - 1)(z + 1)(z + 3i) = 0.\\]Therefore, the other roots are $\\boxed{1,-1,-3i}.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra"
+  },
+  {
+    "problem": "Let $f(x)$ be a strictly increasing function defined for all $x > 0$ such that $f(x) > -\\frac{1}{x}$ for all $x > 0$, and\n\\[f(x) f \\left( f(x) + \\frac{1}{x} \\right) = 1\\]for all $x > 0$.  Find $f(1)$.",
+    "solution": "From the given equation,\n\\[f\\left(f(x) + \\frac{1}{x}\\right) = \\frac{1}{f(x)}.\\]Since $y = f(x) + \\frac{1}{x} > 0$ is in the domain of $f$, we have that\n\\[f\\left(f(x) + \\frac{1}{x}\\right)\\cdot f\\left(f\\left(f(x)+\\frac{1}{x}\\right) + \\frac{1}{f(x)+\\frac{1}{x}} \\right) = 1.\\]Substituting $f\\left(f(x) + \\frac{1}{x}\\right) = \\frac{1}{f(x)}$ into the above equation yields\n\\[\\frac{1}{f(x)}\\cdot f\\left(\\frac{1}{f(x)} + \\frac{1}{f(x)+\\frac{1}{x}}\\right) =1,\\]so that\n\\[f\\left(\\frac{1}{f(x)} + \\frac{1}{f(x)+\\frac{1}{x}}\\right) = f(x).\\]Since $f$ is strictly increasing, it must be 1 to 1.  In other words, if $f(a) = f(b)$, then $a=b$. Applying this to the above equation gives\n\\[\\frac{1}{f(x)} + \\frac{1}{f(x)+\\frac{1}{x}} = x.\\]Solving yields that\n\\[f(x) = \\frac{1\\pm\\sqrt{5}}{2x}.\\]Now, if for some $x$ in the domain of $f$,\n\\[f(x) = \\frac{1+\\sqrt{5}}{2x},\\]then\n\\[f(x+1) = \\frac{1\\pm\\sqrt{5}}{2x +2} < \\frac{1+\\sqrt{5}}{2x} = f(x).\\]This contradicts the strictly increasing nature of $f$, since $x < x + 1$.  Therefore,\n\\[f(x) = \\frac{1-\\sqrt{5}}{2x}\\]for all $x>0$. Plugging in $x=1$ yields\n\\[f(1) = \\boxed{\\frac{1-\\sqrt{5}}{2}}.\\]",
+    "level": "Level 5",
+    "type": "Intermediate Algebra"
+  },
+  {
+    "problem": "Find the largest value of $x$ for which\n\\[x^2 + y^2 = x + y\\]has a solution, if $x$ and $y$ are real.",
+    "solution": "Completing the square in $x$ and $y,$ we get\n\\[\\left( x - \\frac{1}{2} \\right)^2 + \\left( y - \\frac{1}{2} \\right)^2 = \\frac{1}{2}.\\]This represents the equation of the circle with center $\\left( \\frac{1}{2}, \\frac{1}{2} \\right)$ and radius $\\frac{1}{\\sqrt{2}}.$\n[asy]\nunitsize(2 cm);\n\ndraw(Circle((0,0),1));\ndraw((0,0)--(1,0));\n\nlabel(\"$\\frac{1}{\\sqrt{2}}$\", (1/2,0), S);\n\ndot(\"$(\\frac{1}{2},\\frac{1}{2})$\", (0,0), N);\ndot((1,0));\n[/asy]\nHence, the largest possible value of $x$ is $\\frac{1}{2} + \\frac{1}{\\sqrt{2}} = \\boxed{\\frac{1 + \\sqrt{2}}{2}}.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra"
+  }
+]

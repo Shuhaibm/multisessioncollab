@@ -1,0 +1,122 @@
+[
+  {
+    "problem": "Dr. Zaius invests $\\$10,000$ in a CD with an annual interest rate of $4\\%$ that compounds semi-annually (twice a year).  After six months, he rolls over the CD into another CD with an annual interest rate of $5\\%$ that also compounds semi-annually.  After six months in the second CD, how much does Dr. Zaius have, in dollars?",
+    "solution": "The first CD compounds at a rate of $4/2 = 2$ percent for the first six months, so Dr. Zaius has $10000 \\cdot 1.02 = 10200$ dollars.  The second CD compounds at a rate of $5/2 = 2.5$ percent for the next six months, so Dr. Zaius then has $10200 \\cdot 1.025 = \\boxed{10455}$ dollars.",
+    "level": "Level 5",
+    "type": "Algebra"
+  },
+  {
+    "problem": "Let $$P(x)=24x^{24}+\\sum_{j=1}^{23}(24-j)\\left(x^{24-j}+x^{24+j}\\right).$$Let $z_1, z_2, \\ldots, z_r$ be the distinct zeros of $P(x)$, and let $z_k^2=a_k+b_{k}i$ for $k=1, 2, \\ldots, r$, where $i=\\sqrt{-1}$, and $a_k$ and $b_k$ are real numbers. Find\n\\[\\sum_{k=1}^{r}|b_k|.\\]",
+    "solution": "Note that\n\\[\nP(x) = x + 2x^2 + 3x^3 + \\cdots + 24x^{24} + 23x^{25} + 22x^{26} + \\cdots + 2x^{46} + x^{47},\n\\]and \\[\nxP(x) = x^2 + 2x^3 + 3x^4 + \\cdots + 24x^{25} + 23x^{26} + \\cdots + 2x^{47} + x^{48},\n\\]so\n\\begin{align*}\n(1-x)P(x) &= x+x^2+\\cdots + x^{24} - (x^{25} + x^{26} + \\cdots +x^{47} + x^{48}) \\\\\n&=(1-x^{24})(x+x^2+\\cdots +x^{24}).\n\\end{align*}Then, for $x\\ne1$, \\begin{align*}\nP(x) &={{x^{24}-1}\\over{x-1}} \\cdot x(1+x+\\cdots +x^{23})\\\\\n&=x\\Bigl({{x^{24}-1}\\over{x-1}}\\Bigr)^2\\; .&(*)\n\\end{align*}One zero of $P(x)$ is 0, which does not contribute to the requested sum.  The remaining zeros of $P(x)$ are the same as those of $(x^{24}-1)^2$, excluding 1. Because $(x^{24}-1)^2$ and $x^{24}-1$ have the same distinct zeros, the remaining zeros of $P(x)$ can be expressed as $z_k= {\\rm cis}\\,15k^{\\circ}$ for $k =\n1,2,3,\\dots,23$.\n\nThe squares of the zeros are therefore of the form ${\\rm cis}\\,30k^{\\circ}$, and the requested sum is $$\\sum_{k=1}^{23}|\\sin30k^{\\circ}|=\n4\\sum_{k=1}^{5}|\\sin30k^{\\circ}| =4\\left( 2 \\cdot \\frac{1}{2} + 2 \\cdot \\frac{\\sqrt{3}}{2} + 1 \\right) = \\boxed{8+4\\sqrt3}.$$Note: The expression $(*)$ can also be obtained using the identity $$(1+x+x^2+\\cdots +x^{n})^2 =\n1+2x+3x^2+\\cdots+(n+1)x^{n}+\\cdots+3x^{2n-2}+2x^{2n-1}+x^{2n}.$$",
+    "level": "Level 5",
+    "type": "Precalculus"
+  },
+  {
+    "problem": "In triangle $ABC$, $AB = AC = 5$ and $BC = 6$.  Let $O$ be the circumcenter of triangle $ABC$.  Find the area of triangle $OBC$.\n\n[asy]\nunitsize(0.6 cm);\n\npair A, B, C, O;\n\nA = (0,4);\nB = (-3,0);\nC = (3,0);\nO = circumcenter(A,B,C);\n\ndraw(A--B--C--cycle);\ndraw(circumcircle(A,B,C));\ndraw(B--O--C);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$O$\", O, N);\n[/asy]",
+    "solution": "Let $M$ be the midpoint of $BC$, so $BM = BC/2$.  Since triangle $ABC$ is isosceles with $AB = AC$, $M$ is also the foot of the altitude from $A$ to $BC$.  Hence, $O$ lies on $AM$.\n\n[asy]\nunitsize(0.6 cm);\n\npair A, B, C, M, O;\n\nA = (0,4);\nB = (-3,0);\nC = (3,0);\nO = circumcenter(A,B,C);\nM = (B + C)/2;\n\ndraw(A--B--C--cycle);\ndraw(circumcircle(A,B,C));\ndraw(B--O--C);\ndraw(A--M);\n\nlabel(\"$A$\", A, N);\nlabel(\"$B$\", B, SW);\nlabel(\"$C$\", C, SE);\nlabel(\"$M$\", M, S);\nlabel(\"$O$\", O, NE);\n[/asy]\n\nAlso, by Pythagoras on right triangle $ABM$, $AM = 4$.  Then the area of triangle $ABC$ is \\[K = \\frac{1}{2} \\cdot BC \\cdot AM = \\frac{1}{2} \\cdot 6 \\cdot 4 = 12.\\]Next, the circumradius of triangle $ABC$ is \\[R = \\frac{AB \\cdot AC \\cdot BC}{4K} = \\frac{5 \\cdot 5 \\cdot 6}{4 \\cdot 12} = \\frac{25}{8}.\\]Then by Pythagoras on right triangle $BMO$, \\begin{align*}\nMO &= \\sqrt{BO^2 - BM^2} \\\\\n&= \\sqrt{R^2 - BM^2}\\\\\n& = \\sqrt{\\left( \\frac{25}{8} \\right)^2 - 3^2}\\\\\n& = \\sqrt{\\frac{49}{64}} \\\\\n&= \\frac{7}{8}.\\end{align*}Finally, the area of triangle $OBC$ is then \\[\\frac{1}{2} \\cdot BC \\cdot OM = \\frac{1}{2} \\cdot 6 \\cdot \\frac{7}{8} = \\boxed{\\frac{21}{8}}.\\]",
+    "level": "Level 5",
+    "type": "Geometry"
+  },
+  {
+    "problem": "Let $p$, $q$, and $r$ be constants. One solution to the equation $(x-p)(x-q) = (r-p)(r-q)$ is $x=r$. Find the other solution in terms of $p$, $q$, and $r$.",
+    "solution": "If we expand the left side, we have  \\begin{align*}\n(x-p)(x-q) &=x(x-q) -p(x-q)\\\\\n& = x^2 - qx - px +pq \\\\\n&= x^2 -(p+q)x + pq.\n\\end{align*} The other side of the equation is a constant, since there isn't an $x$ term. So, if we view the equation as a quadratic in $x$, the sum of the roots is $-[-(p+q)] = p+q$.  We know that one of the roots is $r$, so if the other is $s$, we have $r+s = p+q$, so $s = \\boxed{p+q-r}$.",
+    "level": "Level 5",
+    "type": "Algebra"
+  },
+  {
+    "problem": "There are thirty-five red, yellow, orange, and white marbles in a bag. If half the number of red marbles equals two less than the number of yellow marbles, equals a third the number of orange marbles, and equals a third of three more than the number of white marbles, how many red marbles are there?",
+    "solution": "Call the number of red marbles $a$, the number of yellow marbles $b$, the number of orange marbles $c$, and the number of white marbles $d$. We can express the information given in the problem by the following system of linear equations:  \\begin{align*}\na+b+c+d &= 35\\\\\n\\frac{a}{2} = b - 2 = \\frac{c}{3} &= \\frac{d+3}{3}\n\\end{align*} Using the second expression, we can solve for $a$, $c$, and $d$ in terms of $b$:\n\\begin{align*}\na &= 2b - 4,\\\\\nc &= 3b - 6, \\\\\nd &= 3b - 9\n\\end{align*} Putting these values into the first equation gives $2b - 4 + b + 3b - 6 + 3b - 9 = 35$, so $b = 6$. Because $a = 2b - 4$, $a = 12 - 4 = \\boxed{8}$.",
+    "level": "Level 5",
+    "type": "Algebra"
+  },
+  {
+    "problem": "In the complex plane, let $S$ be the set of complex numbers $z$ such that\n\\[\\left| z + \\frac{1}{z} \\right| \\le 2.\\]Find the area of $S.$",
+    "solution": "Let $z = x + yi,$ where $x$ and $y$ are real numbers.  The given inequality is equivalent to\n\\[|z^2 + 1| \\le 2|z|.\\]Then\n\\[|(x^2 - y^2 + 1) + 2xyi| \\le 2|x + yi|.\\]This is equivalent to $|(x^2 - y^2 + 1) + 2xyi|^2 \\le 4|x + yi|^2,$ so\n\\[(x^2 - y^2 + 1)^2 + 4x^2 y^2 \\le 4x^2 + 4y^2.\\]This simplifies to\n\\[x^4 + 2x^2 y^2 + y^4 - 2x^2 - 6y^2 + 1 \\le 0.\\]We can write this as\n\\[(x^2 + y^2)^2 - 2(x^2 + y^2) + 1 - 4y^2 \\le 0,\\]or $(x^2 + y^2 - 1)^2 - 4y^2 \\le 0.$  By difference of squares,\n\\[(x^2 + y^2 - 1 + 2y)(x^2 + y^2 - 1 - 2y) \\le 0.\\]Completing the square for each factor, we get\n\\[(x^2 + (y + 1)^2 - 2)(x^2 + (y - 1)^2 - 2) \\le 0.\\]The factor $x^2 + (y + 1)^2 - 2$ is positive, zero, or negative depending on whether $z$ lies inside outside, on, or inside the circle\n\\[|z + i| = \\sqrt{2}.\\]Similarly, the factor $x^2 + (y - 1)^2 - 2$ is positive, zero, or negative depending on whether $z$ lies inside outside, on, or inside the circle\n\\[|z - i| = \\sqrt{2}.\\]This tells us that $z$ lies in $S$ if and only if $z$ lies in exactly one of these two circles.\n\n[asy]\nunitsize(1 cm);\n\nfill(arc((0,1),sqrt(2),-45,225)--arc((0,-1),sqrt(2),135,45)--cycle,gray(0.7));\nfill(arc((0,-1),sqrt(2),45,-225)--arc((0,1),sqrt(2),225,315)--cycle,gray(0.7));\ndraw(Circle((0,1),sqrt(2)),red);\ndraw(Circle((0,-1),sqrt(2)),red);\ndraw((-3,0)--(3,0));\ndraw((0,-3)--(0,3));\n\nlabel(\"Re\", (3,0), E);\nlabel(\"Im\", (0,3), N);\n\ndot(\"$i$\", (0,1), E);\ndot(\"$-i$\", (0,-1), E);\n[/asy]\n\nWe can divide $S$ into six quarter-circles with radius $\\sqrt{2},$ and two regions that are squares with side length $\\sqrt{2}$ missing a quarter-circle.\n\n[asy]\nunitsize(1 cm);\n\nfill(arc((0,1),sqrt(2),-45,225)--arc((0,-1),sqrt(2),135,45)--cycle,gray(0.7));\nfill(arc((0,-1),sqrt(2),45,-225)--arc((0,1),sqrt(2),225,315)--cycle,gray(0.7));\ndraw(Circle((0,1),sqrt(2)),red);\ndraw(Circle((0,-1),sqrt(2)),red);\ndraw((-3,0)--(3,0));\ndraw((0,-3)--(0,3));\ndraw((-1,0)--(1,2),dashed);\ndraw((1,0)--(-1,2),dashed);\ndraw((-1,0)--(1,-2),dashed);\ndraw((1,0)--(-1,-2),dashed);\n\nlabel(\"Re\", (3,0), E);\nlabel(\"Im\", (0,3), N);\nlabel(\"$\\sqrt{2}$\", (1/2,1/2), NE);\n\ndot((0,1));\ndot((0,-1));\n[/asy]\n\nHence, the area of $S$ is $4 \\cdot \\frac{1}{4} \\cdot (\\sqrt{2})^2 \\cdot \\pi + 2 \\cdot (\\sqrt{2})^2 = \\boxed{2 \\pi + 4}.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra"
+  },
+  {
+    "problem": "What simplified common fraction is equivalent to $0.0\\overline{57}$?",
+    "solution": "To express the number $0.0\\overline{57}$ as a fraction, we call it $x$ and subtract it from $100x$: $$\\begin{array}{r r c r@{}l}\n&100x &=& 5&.7575757\\ldots \\\\\n- &x &=& 0&.0575757\\ldots \\\\\n\\hline\n&99x &=& 5&.7\n\\end{array}$$ This shows that $0.0\\overline{57} = \\frac{5.7}{99} = \\frac{57}{990} = \\boxed{\\frac{19}{330}}$.",
+    "level": "Level 5",
+    "type": "Prealgebra"
+  },
+  {
+    "problem": "Quadrilateral $ABCD$ is a trapezoid with $AB$ parallel to $CD$. We know $AB = 20$ and $CD = 12$. What is the ratio of the area of triangle $ACB$ to the area of the trapezoid $ABCD$? Express your answer as a common fraction.",
+    "solution": "Let the length of the height of trapezoid $ABCD$ be $h$; note that this is also the length of the height of triangle $ACB$ to base $AB$.  Then the area of $ABCD$ is $\\frac{20 + 12}{2}\\cdot h = 16h$.  On the other hand, the area of triangle $ACB$ is $\\frac{1}{2}\\cdot 20\\cdot h = 10h$.  Thus the desired ratio is $\\frac{10}{16} = \\boxed{\\frac{5}{8}}$.",
+    "level": "Level 5",
+    "type": "Prealgebra"
+  },
+  {
+    "problem": "Find all real numbers $k$ such that $x^4+kx^3+x^2+4kx+16=0$ is true for exactly one real number $x = r$.  Enter all the possible values of $k,$ separated by commas.",
+    "solution": "Since the coefficients are real, nonreal roots must come in conjugate pairs.  Hence, if there is only one real root that is a root, its multiplicity must be either 2 or 4.\n\nIf the multiplicity of $r$ is 4, then $r$ must be 2 or $-2,$ so the quartic must be either $(x - 2)^4$ or $(x + 2)^4.$  We can check that neither of these fit the given form.\n\nHence, the quartic must be of the form $(x - r)^2 (x^2 + bx + c),$ where $b^2 - 4c < 0.$  Expanding, we get\n\\[x^4 + (b - 2r) x^3 + (r^2 - 2br + c) x^2 + (br^2 - 2cr) x + cr^2 = x^4 + kx^3 + x^2 + 4kx + 16.\\]Matching coefficients, we get\n\\begin{align*}\nb - 2r &= k, \\\\\nr^2 - 2br + c &= 1, \\\\\nbr^2 - 2cr &= 4k, \\\\\ncr^2 &= 16.\n\\end{align*}Then $c = \\frac{16}{r^2}.$  Comparing $b - 2r = k$ and $br^2 - 2cr = 4k,$ we get\n\\[4b - 8r = br^2 - \\frac{32}{r}.\\]Then $4br - 8r^2 = br^3 - 32,$ so $br^3 + 8r^2 - 4br - 32 = 0.$  This equation factors as\n\\[(r - 2)(r + 2)(br + 8) = 0.\\]If $br + 8 = 0,$ then $b = -\\frac{8}{r},$ and\n\\[b^2 - 4c = \\frac{64}{r^2} - 4 \\cdot \\frac{16}{r^2} = 0,\\]so this case is impossible.  Therefore, either $r = 2$ or $r = -2.$\n\nIf $r = 2,$ then $c = 4,$ $b = \\frac{7}{4},$ and $k = -\\frac{9}{4},$ and the quartic becomes\n\\[x^4 - \\frac{9}{4} x^3 + x^2 - 9x + 16 = (x - 2)^2 \\left( x^2 + \\frac{7}{4} x + 4 \\right).\\]If $r = 2,$ then $c = 4,$ $b = -\\frac{7}{4},$ and $k = \\frac{9}{4},$ and the quartic becomes\n\\[x^4 + \\frac{9}{4} x^3 + x^2 + 9x + 16 = (x + 2)^2 \\left( x^2 - \\frac{7}{4} x + 4 \\right).\\]Hence, the possible values of $k$ are $\\boxed{\\frac{9}{4}, -\\frac{9}{4}}.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra"
+  },
+  {
+    "problem": "What is the largest integer less than $2010$ that has a remainder of $5$ when divided by $7,$ a remainder of $10$ when divided by $11,$ and a remainder of $10$ when divided by $13$?",
+    "solution": "We want a remainder of $10$ when divided by both $11$ and $13$. The least common multiple of $11$ and $13$ is $143$. We add $10$ to the number such that the remainder would be $10$ when divided by $11$ and $13$ so we get $143+10=153$. However, that does not give a remainder of $5$ when divided by $7$, so we add more $143$s until we get a value that works. We get that $153+143+143=439$ gives a remainder of $5$ when divided by $7$.\n\nSince we want the largest integer less than 2010, we keep adding the least common multiple of $7$, $11$, and $13$ until we go over. The least common multiple is $7 \\cdot 11 \\cdot 13 =1001$. We add it to $439$ to get $1440$, adding it again would give a value greater than $2010$, so our answer is $\\boxed{1440}$.",
+    "level": "Level 5",
+    "type": "Number Theory"
+  },
+  {
+    "problem": "Let $a,$ $b,$ and $c$ be positive real numbers such that $a > b$ and $a + b + c = 4.$  Find the minimum value of\n\\[4a + 3b + \\frac{c^3}{(a - b)b}.\\]",
+    "solution": "By AM-GM,\n\\[(a - b) + b + \\frac{c^3}{(a - b)b} \\ge 3 \\sqrt[3]{(a - b) \\cdot b \\cdot \\frac{c^3}{(a - b)b}} = 3c.\\]Hence,\n\\begin{align*}\n4a + 3b + \\frac{c^3}{(a - b)b} &= 3a + 3b + \\left[ (a - b) + b + \\frac{c^3}{(a - b)b} \\right] \\\\\n&\\ge 3a + 3b + 3c \\\\\n&= 12.\n\\end{align*}Equality occurs when $a = 2$ and $b = c = 1,$ so the minimum value is $\\boxed{12}.$",
+    "level": "Level 5",
+    "type": "Intermediate Algebra"
+  },
+  {
+    "problem": "Given that the absolute value of the difference of the two roots of $ax^2 + 5x - 3 = 0$ is $\\frac{\\sqrt{61}}{3}$, and $a$ is positive, what is the value of $a$?",
+    "solution": "We begin by using the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$ to find the values of the two roots. From this, we get that $x = \\frac{-5 \\pm \\sqrt{25 + 12a}}{2a}$. Then, we can find $$x_1 - x_2 = \\frac{-5 + \\sqrt{25 + 12a}}{2a} - \\frac{-5 - \\sqrt{25 + 12a}}{2a} = \\frac{\\sqrt{25 + 12a}}{a}.$$Hence,\n\\[\\frac{\\sqrt{12a + 25}}{a} = \\frac{\\sqrt{61}}{3}.\\]Squaring both sides, we get\n\\[\\frac{12a + 25}{a^2} = \\frac{61}{9},\\]which simplifies to $61a^2 - 108a - 225 = 0$.  This equation factors as $(a - 3)(61a + 75) = 0$.  Since $a$ is positive, $a = \\boxed{3}$.",
+    "level": "Level 5",
+    "type": "Algebra"
+  },
+  {
+    "problem": "How many rectangles are in this figure? Each angle is a right angle.\n\n[asy]\nunitsize(0.06inch);\ndraw((0,0)--(0,-10)--(10,-10)--(10,0)--cycle);\ndraw((5,0)--(5,-10));\ndraw((0,-5)--(10,-5));\ndraw((5,-5)--(15,-5)--(15,-15)--(5,-15)--cycle);\ndraw((10,-5)--(10,-15));\ndraw((5,-10)--(15,-10));\n[/asy]",
+    "solution": "We consider the separate cases by the dimensions of each type of rectangle. There are 7 of the $1 \\times 1$ squares. There are 4 vertical $1 \\times 2$ rectangles, and 4 horizontal $1 \\times 2$ rectangles. There are also 1 each of vertical and horizontal $1 \\times 3$ rectangles. And, finally, there are the two $2 \\times 2$ squares. In total, there are $7 + 4 + 4 + 1 + 1 + 2 = \\boxed{19}$ rectangles.",
+    "level": "Level 5",
+    "type": "Prealgebra"
+  },
+  {
+    "problem": "A Penteria is a special (fictional) kind of bacteria such that, regardless of the original population in a collection, the population increases by $5$ every minute. Additionally, at the end of every hour, all but the initial ones die. If $137$ Penteria are alive after $506$ minutes, how many were there at the beginning?",
+    "solution": "We have that $506\\equiv 26\\pmod {60}$, so $26$ minutes have passed in the latest hour. Let $a$ be the initial population. Then $a+26\\cdot 5=137\\implies a=137-26\\cdot 5=137-130=\\boxed{7}$.",
+    "level": "Level 5",
+    "type": "Number Theory"
+  },
+  {
+    "problem": "A base-10 three-digit number $n$ is selected at random. What is the probability that the base-9 representation and the base-11 representation of $n$ are both three-digit numerals?",
+    "solution": "The largest base-9 three-digit number is $9^3-1=728$ and the smallest base-11 three-digit number is $11^2=121$. There are $608$ integers that satisfy $121\\le n\\le 728$, and 900 three-digit numbers altogether, so the probability is $608/900=\\boxed{\\frac{152}{225}}$.",
+    "level": "Level 5",
+    "type": "Number Theory"
+  },
+  {
+    "problem": "A point $(x,y)$ on the coordinate plane with both coordinates negative is a distance of 6 units from the $x$-axis. It is a distance of 15 units from the point $(8,3)$. It is a distance $\\sqrt{n}$ from the origin. What is $n$?",
+    "solution": "We know that $y=-6$ from the given information. By the distance formula, we have the equation $\\sqrt{(x-8)^2+(-6-3)^2}=15$. Solving, we have \\begin{align*}\n\\sqrt{(x-8)^2+(-6-3)^2}&=15 \\\\\nx^2-16x+64+81&=225 \\\\\nx^2-16x-80&=0 \\\\\n(x-20)(x+4)&=0\n\\end{align*}Thus, $x+4=0$ or $x-20=0$, so $x=-4$ or $x=20$. $x=-4$ by the given conditions. Thus, our point is $(-4,-6)$ and is a distance of $\\sqrt{(-4)^2+(-6)^2}=\\sqrt{52}$ units from the origin. $n=\\boxed{52}$.",
+    "level": "Level 5",
+    "type": "Algebra"
+  },
+  {
+    "problem": "The distances from a point $P$ to five of the vertices of a regular octahedron are 3, 7, 8, 9, and 11.  Find the distance from $P$ to the sixth vertex.\n\n[asy]\nimport three;\n\nsize(125);\ncurrentprojection = perspective(6,3,1);\n\ntriple A, B, C, D, E, F, P;\n\nA = (1,0,0);\nB = (-1,0,0);\nC = (0,1,0);\nD = (0,-1,0);\nE = (0,0,1);\nF = (0,0,-1);\nP = (1.2,1.5,1);\n\ndraw(A--P,red);\ndraw(B--P,red);\ndraw(C--P,red);\ndraw(D--P,red);\ndraw(E--P,red);\ndraw(F--P,red);\n\ndraw(A--C);\ndraw(A--D);\ndraw(A--E);\ndraw(A--F);\ndraw(C--E--D--F--cycle);\ndraw(D--B--C,dashed);\ndraw(B--C,dashed);\ndraw(B--D,dashed);\ndraw(B--E,dashed);\ndraw(B--F,dashed);\n\nlabel(\"$P$\", P, NE);\n[/asy]",
+    "solution": "Let $P = (x,y,z),$ and let the vertices of the octahedron be $A = (a,0,0),$ $B = (-a,0,0),$ $C = (0,a,0),$ $D = (0,-a,0),$ $E = (0,0,a),$ and $F = (0,0,-a).$  Then the squares of the distances from $P$ to the vertices are\n\\begin{align*}\nd_A^2 &= (x - a)^2 + y^2 + z^2, \\\\\nd_B^2 &= (x + a)^2 + y^2 + z^2, \\\\\nd_C^2 &= x^2 + (y - a)^2 + z^2, \\\\\nd_D^2 &= x^2 + (y + a)^2 + z^2, \\\\\nd_E^2 &= x^2 + y^2 + (z - a)^2, \\\\\nd_F^2 &= x^2 + y^2 + (z + a)^2.\n\\end{align*}Note that\n\\[d_A^2 + d_B^2 = d_C^2 + d_D^2 = d_E^2 + d_F^2 = 2x^2 + 2y^2 + 2z^2 + 2a^2.\\]Among the distances 3, 7, 8, 9, and 11, we check the sum of their squares in pairs:\n\\begin{align*}\n3^2 + 7^2 &= 58, \\\\\n3^2 + 8^2 &= 73, \\\\\n3^2 + 9^2 &= 90, \\\\\n3^2 + 11^2 &= 130, \\\\\n7^2 + 8^2 &= 113, \\\\\n7^2 + 9^2 &= 130, \\\\\n7^2 + 11^2 &= 170, \\\\\n8^2 + 9^2 &= 145, \\\\\n8^2 + 11^2 &= 185, \\\\\n9^2  + 11^2 &= 202.\n\\end{align*}We see only one repeated value, namely $3^2 + 11^2 = 7^2 + 9^2 = 130.$  Therefore, the sixth distance must be $\\sqrt{130 - 8^2} = \\boxed{\\sqrt{66}}.$",
+    "level": "Level 5",
+    "type": "Precalculus"
+  },
+  {
+    "problem": "In the five-sided star shown, the letters $A$, $B$, $C$, $D$, and $E$ are replaced by the numbers 3, 5, 6, 7, and 9, although not necessarily in this order. The sums of the numbers at the ends of the line segments $\\overline{AB}$, $\\overline{BC}$, $\\overline{CD}$, $\\overline{DE}$, and $\\overline{EA}$ form an arithmetic sequence, although not necessarily in this order.  What is the middle term of the arithmetic sequence?\n\n[asy]\npair A,B,C,D,E;\nA=(0,10);\nB=(5.9,-8.1);\nC=(-9.5,3.1);\nD=(9.5,3.1);\nE=(-5.9,-8.1);\ndraw(A--B--C--D--E--cycle,linewidth(0.7));\nlabel(\"$A$\",A,N);\nlabel(\"$B$\",B,SE);\nlabel(\"$C$\",C,NW);\nlabel(\"$D$\",D,NE);\nlabel(\"$E$\",E,SW);\n[/asy]",
+    "solution": "Each number appears in two sums, so the sum of the sequence is \\[\n2(3+5+6+7+9)=60.\n\\]The middle term of a five-term arithmetic sequence is the mean of its terms, so  $60/5=\\boxed{12}$ is the middle term.\n\nThe figure shows an arrangement of the five numbers that meets the requirement.\n\n[asy]\npair A,B,C,D,E;\nA=(0,10);\nB=(5.9,-8.1);\nC=(-9.5,3.1);\nD=(9.5,3.1);\nE=(-5.9,-8.1);\ndraw(A--B--C--D--E--cycle,linewidth(0.7));\nlabel(\"7\",A,N);\nlabel(\"6\",B,SE);\nlabel(\"5\",C,NW);\nlabel(\"9\",D,NE);\nlabel(\"3\",E,SW);\nlabel(\"14\",(0,1.1),N);\nlabel(\"13\",(0.7,0),NE);\nlabel(\"10\",(-0.7,0),NW);\nlabel(\"11\",(0,-0.7),SW);\nlabel(\"12\",(0,-0.7),SE);\n[/asy]",
+    "level": "Level 5",
+    "type": "Algebra"
+  },
+  {
+    "problem": "A square has sides of length 2.  Set $\\cal S$ is the set of all line segments that have length 2 and whose endpoints are on adjacent sides of the square.  The midpoints of the line segments in set $\\cal S$ enclose a region whose area to the nearest hundredth is $k$.  Find $100k$.",
+    "solution": "[asy]\npair A,B,C,D,M,P,Q;\n\nA = (0,0);\nB=(1,0);\nC=(1,1);\nD=(0,1);\nP = (0.8,0);\nQ = (0,0.6);\nM = (P+Q)/2;\ndraw(A--M);\ndraw(P--Q--D--C--B--A--Q);\nlabel(\"$A$\",A, SW);\nlabel(\"$D$\",D,NW);\nlabel(\"$C$\",C,NE);\nlabel(\"$B$\",B,SE);\nlabel(\"$Q$\",Q,W);\nlabel(\"$P$\",P,S);\nlabel(\"$M$\",M,NE);\n[/asy]\n\n\nLet $\\overline{PQ}$ be a line segment in set $\\cal\nS$ that is not a side of the square, and let $M$ be the midpoint of $\\overline{PQ}$. Let $A$ be the vertex of the square that is on both the side that contains $P$ and the side that contains $Q$. Because $\\overline{AM}$ is the median to the hypotenuse of right $\\triangle PAQ$, $AM=(1/2)\\cdot PQ=(1/2)\\cdot2=1$.  Thus every midpoint is 1 unit from a vertex of the square, and the set of all the midpoints forms four quarter-circles of radius 1 and with centers at the vertices of the square.  The area of the region bounded by the four arcs is $4-4\\cdot(\\pi/4)=4-\\pi$, so $100k=100(4-3.14)=\\boxed{86}$.\n\n$$\\centerline{{\\bf OR}}$$Place a coordinate system so that the vertices of the square are at $(0,0)$, $(2,0)$, $(2,2)$, and $(0,2)$.  When the segment's vertices are on the sides that contain $(0,0)$, its endpoints' coordinates can be represented as $(a,0)$ and $(0,b)$.  Let the coordinates of the midpoint of the segment be $(x,y)$.  Then $(x,y)=(a/2,b/2)$ and $a^2+b^2=4$.  Thus $x^2+y^2=(a/2)^2+(b/2)^2\n= 1$, and the midpoints of these segments form a quarter-circle with radius 1 centered at the origin.  The set of all the midpoints forms four quarter-circles, and the area of the region bounded by the four arcs is $4-4\\cdot(\\pi/4)=4-\\pi$, so $100k=100(4-3.14)=\\boxed{86}$.",
+    "level": "Level 5",
+    "type": "Geometry"
+  },
+  {
+    "problem": "Let $x_1,$ $x_2,$ $\\dots,$ $x_{2016}$ be the roots of\n\\[x^{2016} + x^{2015} + \\dots + x + 1 = 0.\\]Find\n\\[\\frac{1}{(1 - x_1)^2} + \\frac{1}{(1 - x_2)^2} + \\dots + \\frac{1}{(1 - x_{2016})^2}.\\]",
+    "solution": "Let $y = \\frac{1}{1 - x}.$  Solving for $x$ in terms of $y,$ we find\n\\[x = \\frac{y - 1}{y}.\\]Then\n\\[\\left( \\frac{y - 1}{y} \\right)^{2016} + \\left( \\frac{y - 1}{y} \\right)^{2015} + \\dots + \\left( \\frac{y - 1}{y} \\right) + 1 = 0.\\]Hence,\n\\[(y - 1)^{2016} + y (y - 1)^{2015} + y^2 (y - 1)^{2014} + \\dots + y^{2015} (y - 1) + y^{2016} = 0.\\]This expands as\n\\begin{align*}\n&\\left( y^{2016} - 2016y^{2015} + \\binom{2016}{2} y^{2014} - \\dotsb \\right) \\\\\n&+ y \\left( y^{2015} - 2015y^{2014} + \\binom{2015}{2} y^{2013} - \\dotsb \\right) \\\\\n&+ y^2 \\left( y^{2014} - 2014y^{2013} + \\binom{2014}{2} y^{2012} - \\dotsb \\right) \\\\\n&+ \\dotsb \\\\\n&+ y^{2015} (y - 1) + y^{2016} = 0.\n\\end{align*}The coefficient of $y^{2016}$ is 2017.  The coefficient of $y^{2015}$ is\n\\[-2016 - 2015 - \\dots - 2 - 1 = -\\frac{2016 \\cdot 2017}{2} = -2033136.\\]The coefficient of $y^{2014}$ is\n\\[\\binom{2016}{2} + \\binom{2015}{2} + \\dots + \\binom{2}{2}.\\]By the Hockey Stick Identity,\n\\[\\binom{2016}{2} + \\binom{2015}{2} + \\dots + \\binom{2}{2} = \\binom{2017}{3} = 1365589680.\\]The roots of the polynomial in $y$ above are $y_k = \\frac{1}{1 - x_k}$ for $1 \\le k \\le 2016,$ so by Vieta's formulas,\n\\[y_1 + y_2 + \\dots + y_{2016} = \\frac{2033136}{2017} = 1008,\\]and\n\\[y_1 y_2 + y_1 y_3 + \\dots + y_{2015} y_{2016} = \\frac{1365589680}{2017} = 677040.\\]Therefore,\n\\begin{align*}\n&\\frac{1}{(1 - x_1)^2} + \\frac{1}{(1 - x_2)^2} + \\dots + \\frac{1}{(1 - x_{2016})^2} \\\\\n&= y_1^2 + y_2^2 + \\dots + y_{2016}^2 \\\\\n&= (y_1 + y_2 + \\dots + y_{2016})^2 - 2(y_1 y_2 + y_1 y_3 + \\dots + y_{2015} y_{2016}) \\\\\n&= 1008^2 - 2 \\cdot 677040 \\\\\n&= \\boxed{-338016}.\n\\end{align*}",
+    "level": "Level 5",
+    "type": "Intermediate Algebra"
+  }
+]
