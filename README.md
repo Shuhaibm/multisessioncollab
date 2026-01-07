@@ -4,7 +4,7 @@
 
 <!-- ### Learning User Preferences Through Interaction for Long-Term Collaboration -->
 
-[![Paper](https://img.shields.io/badge/arXiv-Paper-b31b1b.svg)](https://arxiv.org/abs/2601.02702)
+[![Paper](https://img.shields.io/badge/arXiv-Paper-b31b1b.svg)]()
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
@@ -15,7 +15,7 @@
 **MultiSessionCollab** is a benchmark for evaluating how well conversational agents learn user preferences and leverage it to meaningfully improve interactions during multi-session collaboration.
 
 **Paper**:
-- <u> [Learning User Preferences Through Interaction for Long-Term Collaboration](https://arxiv.org/abs/2601.02702) </u>
+- <u> [Learning User Preferences Through Interaction for Long-Term Collaboration]() </u>
 
 
 ---
@@ -26,7 +26,7 @@
  1. Clone this repository:
  
 ```bash
-git clone https://github.com/Shuhaibm/multisessioncollab.git
+git clone ***
 ```
 
 2. Create virtual environment:
@@ -134,25 +134,4 @@ Here are the argument descriptions:
 | `--judge_model_name` | Model for evaluating accuracy |
 | `--output_file` | Output file |
 
----
-
-## License
-
-See `./LICENSE`.
-
-
----
-
-## Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@misc{mehri2026learninguserpreferencesinteraction,
-      title={Learning User Preferences Through Interaction for Long-Term Collaboration}, 
-      author={Shuhaib Mehri and Priyanka Kargupta and Tal August and Dilek Hakkani-Tür},
-      journal={arXiv preprint arXiv:2601.02702},
-      year={2026},
-      url={https://arxiv.org/abs/2601.02702}, 
-}
 ```
